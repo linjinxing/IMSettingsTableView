@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class IMSectionItem;
+@class IMTableViewCellItem;
 
 @interface IMTableViewDataSource : NSObject<NSCopying>
 @property(assign, nonatomic, readonly) UITableViewStyle tableViewStyle;
@@ -19,7 +19,7 @@
 
 + (instancetype)tableViewDataSourceWithPlistPath:(NSString*)path;
 - (NSUInteger)numberOfRowsInSection:(NSInteger)section;
-- (IMSectionItem*)itemAtIndexPath:(NSIndexPath*)indexPath;
+- (IMTableViewCellItem*)itemAtIndexPath:(NSIndexPath*)indexPath;
 @end
 
 

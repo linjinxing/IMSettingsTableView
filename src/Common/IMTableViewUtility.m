@@ -11,7 +11,25 @@
 
 UITableViewStyle IMTableViewUtilityStyleFromString(NSString* text)
 {
-    NSDictionary* dict = @{@"Grouped" : @(UITableViewStyleGrouped),
-                           @"Plain" : @(UITableViewStylePlain)};
-    return [[dict valueForKey:text] integerValue];
+    return [[@{@"Grouped" : @(UITableViewStyleGrouped),
+               @"Plain" : @(UITableViewStylePlain)}
+             valueForKey:text]
+                   integerValue];
 }
+
+
+IMTableViewCellStyle IMTableViewUtilityCellStyleFromString(NSString* text)
+{
+    return [[@{@"Default" : @(IMTableViewCellStyleDefault),
+               @"Value1" : @(IMTableViewCellStyleValue1),
+               @"Value2" : @(IMTableViewCellStyleValue2),
+               @"Subtitle" : @(IMTableViewCellStyleSubtitle),
+               @"Textfield" : @(IMTableViewCellStyleTextfield),
+               @"Switch" : @(IMTableViewCellStyleSwitch),
+               @"Button" : @(IMTableViewCellStyleButton),
+               }
+             valueForKey:text]
+             integerValue];
+}
+
+

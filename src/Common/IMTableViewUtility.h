@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "IMTableViewConst.h"
 
 UITableViewStyle IMTableViewUtilityStyleFromString(NSString* text);
+
+IMTableViewCellStyle IMTableViewUtilityCellStyleFromString(NSString* text);

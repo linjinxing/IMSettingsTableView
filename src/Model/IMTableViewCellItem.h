@@ -7,15 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IMTableViewConst.h"
 
 @class IMTableViewDataSource;
 
-@interface IMSectionItem : NSObject<NSCopying>
+@interface IMTableViewCellItem : NSObject<NSCopying>
 @property(copy, nonatomic) NSString* key;
 @property(copy, nonatomic) NSString* imageName;
 @property(copy, nonatomic) NSString* textTitle;
 @property(copy, nonatomic) NSString* detailTitle;
 @property(copy, nonatomic) NSString* defaultValue;
-@property(copy, nonatomic) NSString* cellStyle;
+@property(readonly, assign, nonatomic) IMTableViewCellStyle cellStyle;
+
 @property(copy, nonatomic) IMTableViewDataSource* subDataSource;
 @end

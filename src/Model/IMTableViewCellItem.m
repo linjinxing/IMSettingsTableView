@@ -6,18 +6,31 @@
 //  Copyright (c) 2014 i-Move. All rights reserved.
 //
 
-#import "IMSectionItem.h"
+#import "IMTableViewCellItem.h"
+#import "IMTableViewUtility.h"
 
-@implementation IMSectionItem
+@interface IMTableViewCellItem()
+@property(copy, nonatomic) NSString* style;
+@end
+
+
+@implementation IMTableViewCellItem
+@dynamic style;
+
+- (IMTableViewCellStyle) cellStyle
+{
+    return IMTableViewUtilityCellStyleFromString(self.style);
+}
+
 - (id)copyWithZone:(NSZone *)zone
 {
-    IMSectionItem* item = [[[self class] alloc] init];
+    IMTableViewCellItem* item = [[[self class] alloc] init];
     item.key = self.key;
     item.imageName = self.imageName;
     item.textTitle = self.textTitle;
     item.detailTitle = self.detailTitle;
     item.defaultValue = self.defaultValue;
-    item.cellStyle = self.cellStyle;
+    item.style = self.style;
     item.subDataSource = self.subDataSource;
     return item;
 }

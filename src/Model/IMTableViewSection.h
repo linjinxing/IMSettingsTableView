@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface IMSection : NSObject<NSCopying>
+@interface IMTableViewSection : NSObject<NSCopying>
 @property(copy, nonatomic) NSString* headerText;
 @property(copy, nonatomic) NSString* footerText;
 @property(copy, nonatomic) NSArray* items;
