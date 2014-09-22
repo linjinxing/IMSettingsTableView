@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface IMSection : NSObject
-
+@interface IMSection : NSObject<NSCopying>
+@property(copy, nonatomic) NSString* headerText;
+@property(copy, nonatomic) NSString* footerText;
+@property(copy, nonatomic) NSArray* items;
 @end

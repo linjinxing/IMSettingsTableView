@@ -29,6 +29,12 @@
 		F8F2EA0419CFFCF400DC8BFD /* IMSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0219CFFCF400DC8BFD /* IMSection.m */; };
 		F8F2EA0719CFFD1000DC8BFD /* IMSectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0619CFFD1000DC8BFD /* IMSectionItem.m */; };
 		F8F2EA0819CFFD1000DC8BFD /* IMSectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0619CFFD1000DC8BFD /* IMSectionItem.m */; };
+		F8F2EA0B19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0A19D0026F00DC8BFD /* IMTableViewDataSource.m */; };
+		F8F2EA0C19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0A19D0026F00DC8BFD /* IMTableViewDataSource.m */; };
+		F8F2EA0F19D00C5B00DC8BFD /* IMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0E19D00C5B00DC8BFD /* IMTableViewController.m */; };
+		F8F2EA1019D00C5B00DC8BFD /* IMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0E19D00C5B00DC8BFD /* IMTableViewController.m */; };
+		F8F2EA1319D00DD200DC8BFD /* IMTableViewUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA1219D00DD200DC8BFD /* IMTableViewUtility.m */; };
+		F8F2EA1419D00DD200DC8BFD /* IMTableViewUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA1219D00DD200DC8BFD /* IMTableViewUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,12 @@
 		F8F2EA0219CFFCF400DC8BFD /* IMSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSection.m; sourceTree = "<group>"; };
 		F8F2EA0519CFFD1000DC8BFD /* IMSectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSectionItem.h; sourceTree = "<group>"; };
 		F8F2EA0619CFFD1000DC8BFD /* IMSectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSectionItem.m; sourceTree = "<group>"; };
+		F8F2EA0919D0026F00DC8BFD /* IMTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewDataSource.h; sourceTree = "<group>"; };
+		F8F2EA0A19D0026F00DC8BFD /* IMTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewDataSource.m; sourceTree = "<group>"; };
+		F8F2EA0D19D00C5B00DC8BFD /* IMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewController.h; sourceTree = "<group>"; };
+		F8F2EA0E19D00C5B00DC8BFD /* IMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewController.m; sourceTree = "<group>"; };
+		F8F2EA1119D00DD200DC8BFD /* IMTableViewUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewUtility.h; sourceTree = "<group>"; };
+		F8F2EA1219D00DD200DC8BFD /* IMTableViewUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +190,8 @@
 			children = (
 				F8F2E9FD19CFFC5A00DC8BFD /* IMTableViewConst.h */,
 				F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */,
+				F8F2EA1119D00DD200DC8BFD /* IMTableViewUtility.h */,
+				F8F2EA1219D00DD200DC8BFD /* IMTableViewUtility.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -185,6 +199,8 @@
 		F8F2E87B19CFC03200DC8BFD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F8F2EA0D19D00C5B00DC8BFD /* IMTableViewController.h */,
+				F8F2EA0E19D00C5B00DC8BFD /* IMTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +208,8 @@
 		F8F2E87C19CFC03200DC8BFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F8F2EA0919D0026F00DC8BFD /* IMTableViewDataSource.h */,
+				F8F2EA0A19D0026F00DC8BFD /* IMTableViewDataSource.m */,
 				F8F2EA0119CFFCF400DC8BFD /* IMSection.h */,
 				F8F2EA0219CFFCF400DC8BFD /* IMSection.m */,
 				F8F2EA0519CFFD1000DC8BFD /* IMSectionItem.h */,
@@ -326,12 +344,15 @@
 				F8F2E85819CFBD2700DC8BFD /* IMRootViewController.m in Sources */,
 				F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */,
 				F8F2E85219CFBD2700DC8BFD /* main.m in Sources */,
+				F8F2EA0F19D00C5B00DC8BFD /* IMTableViewController.m in Sources */,
 				F8F2E88919CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */,
 				F8F2EA0719CFFD1000DC8BFD /* IMSectionItem.m in Sources */,
 				F8F2E88119CFC0A000DC8BFD /* IMTextfieldTableViewCell.m in Sources */,
 				F8F2E9FF19CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */,
 				F8F2E9FA19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */,
 				F8F2E88519CFD1D100DC8BFD /* IMSwitchTableViewCell.m in Sources */,
+				F8F2EA1319D00DD200DC8BFD /* IMTableViewUtility.m in Sources */,
+				F8F2EA0B19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */,
 				F8F2EA0319CFFCF400DC8BFD /* IMSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,11 +362,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F2E86C19CFBD2700DC8BFD /* IMTableViewTests.m in Sources */,
+				F8F2EA0C19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */,
+				F8F2EA1419D00DD200DC8BFD /* IMTableViewUtility.m in Sources */,
 				F8F2EA0019CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */,
 				F8F2EA0419CFFCF400DC8BFD /* IMSection.m in Sources */,
 				F8F2E88219CFC0A000DC8BFD /* IMTextfieldTableViewCell.m in Sources */,
 				F8F2EA0819CFFD1000DC8BFD /* IMSectionItem.m in Sources */,
 				F8F2E88619CFD1D100DC8BFD /* IMSwitchTableViewCell.m in Sources */,
+				F8F2EA1019D00C5B00DC8BFD /* IMTableViewController.m in Sources */,
 				F8F2E9FB19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */,
 				F8F2E88A19CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */,
 			);

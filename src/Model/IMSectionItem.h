@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface IMSectionItem : NSObject
+@class IMTableViewDataSource;
 
+@interface IMSectionItem : NSObject<NSCopying>
+@property(copy, nonatomic) NSString* key;
+@property(copy, nonatomic) NSString* imageName;
+@property(copy, nonatomic) NSString* textTitle;
+@property(copy, nonatomic) NSString* detailTitle;
+@property(copy, nonatomic) NSString* defaultValue;
+@property(copy, nonatomic) NSString* cellStyle;
+@property(copy, nonatomic) IMTableViewDataSource* subDataSource;
 @end
