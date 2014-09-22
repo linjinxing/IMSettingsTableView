@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 i-Move. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "IMRootViewController.h"
 
-@interface ViewController ()
+@interface IMRootViewController ()
 
 @end
 
-@implementation ViewController
+@implementation IMRootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IMTextfieldTableViewCell.h
 //  IMTableView
 //
 //  Created by LoveYouForever on 9/22/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface IMTextfieldTableViewCell : UITableViewCell
+@property(strong, nonatomic, readonly)UITextField* textField;
 @end
-

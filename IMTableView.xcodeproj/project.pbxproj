@@ -9,11 +9,26 @@
 /* Begin PBXBuildFile section */
 		F8F2E85219CFBD2700DC8BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85119CFBD2700DC8BFD /* main.m */; };
 		F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85419CFBD2700DC8BFD /* AppDelegate.m */; };
-		F8F2E85819CFBD2700DC8BFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85719CFBD2700DC8BFD /* ViewController.m */; };
+		F8F2E85819CFBD2700DC8BFD /* IMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85719CFBD2700DC8BFD /* IMRootViewController.m */; };
 		F8F2E85B19CFBD2700DC8BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F2E85919CFBD2700DC8BFD /* Main.storyboard */; };
 		F8F2E85D19CFBD2700DC8BFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F2E85C19CFBD2700DC8BFD /* Images.xcassets */; };
 		F8F2E86019CFBD2700DC8BFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F2E85E19CFBD2700DC8BFD /* LaunchScreen.xib */; };
 		F8F2E86C19CFBD2700DC8BFD /* IMTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E86B19CFBD2700DC8BFD /* IMTableViewTests.m */; };
+		F8F2E87819CFBF6700DC8BFD /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F2E87719CFBF6700DC8BFD /* Quick.framework */; };
+		F8F2E88119CFC0A000DC8BFD /* IMTextfieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E88019CFC0A000DC8BFD /* IMTextfieldTableViewCell.m */; };
+		F8F2E88219CFC0A000DC8BFD /* IMTextfieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E88019CFC0A000DC8BFD /* IMTextfieldTableViewCell.m */; };
+		F8F2E88519CFD1D100DC8BFD /* IMSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E88419CFD1D100DC8BFD /* IMSwitchTableViewCell.m */; };
+		F8F2E88619CFD1D100DC8BFD /* IMSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E88419CFD1D100DC8BFD /* IMSwitchTableViewCell.m */; };
+		F8F2E88919CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E88819CFD30200DC8BFD /* IMButtonTableViewCell.m */; };
+		F8F2E88A19CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E88819CFD30200DC8BFD /* IMButtonTableViewCell.m */; };
+		F8F2E9FA19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E9F919CFF9A900DC8BFD /* IMTableViewCell.m */; };
+		F8F2E9FB19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E9F919CFF9A900DC8BFD /* IMTableViewCell.m */; };
+		F8F2E9FF19CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */; };
+		F8F2EA0019CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */; };
+		F8F2EA0319CFFCF400DC8BFD /* IMSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0219CFFCF400DC8BFD /* IMSection.m */; };
+		F8F2EA0419CFFCF400DC8BFD /* IMSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0219CFFCF400DC8BFD /* IMSection.m */; };
+		F8F2EA0719CFFD1000DC8BFD /* IMSectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0619CFFD1000DC8BFD /* IMSectionItem.m */; };
+		F8F2EA0819CFFD1000DC8BFD /* IMSectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0619CFFD1000DC8BFD /* IMSectionItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +47,30 @@
 		F8F2E85119CFBD2700DC8BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8F2E85319CFBD2700DC8BFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8F2E85419CFBD2700DC8BFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F8F2E85619CFBD2700DC8BFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F8F2E85719CFBD2700DC8BFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8F2E85619CFBD2700DC8BFD /* IMRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMRootViewController.h; sourceTree = "<group>"; };
+		F8F2E85719CFBD2700DC8BFD /* IMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMRootViewController.m; sourceTree = "<group>"; };
 		F8F2E85A19CFBD2700DC8BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8F2E85C19CFBD2700DC8BFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8F2E85F19CFBD2700DC8BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F8F2E86519CFBD2700DC8BFD /* IMTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F2E86A19CFBD2700DC8BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F2E86B19CFBD2700DC8BFD /* IMTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMTableViewTests.m; sourceTree = "<group>"; };
+		F8F2E87519CFBEDB00DC8BFD /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		F8F2E87719CFBF6700DC8BFD /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
+		F8F2E87F19CFC0A000DC8BFD /* IMTextfieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTextfieldTableViewCell.h; sourceTree = "<group>"; };
+		F8F2E88019CFC0A000DC8BFD /* IMTextfieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTextfieldTableViewCell.m; sourceTree = "<group>"; };
+		F8F2E88319CFD1D100DC8BFD /* IMSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSwitchTableViewCell.h; sourceTree = "<group>"; };
+		F8F2E88419CFD1D100DC8BFD /* IMSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSwitchTableViewCell.m; sourceTree = "<group>"; };
+		F8F2E88719CFD30200DC8BFD /* IMButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMButtonTableViewCell.h; sourceTree = "<group>"; };
+		F8F2E88819CFD30200DC8BFD /* IMButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMButtonTableViewCell.m; sourceTree = "<group>"; };
+		F8F2E9F819CFF9A900DC8BFD /* IMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewCell.h; sourceTree = "<group>"; };
+		F8F2E9F919CFF9A900DC8BFD /* IMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewCell.m; sourceTree = "<group>"; };
+		F8F2E9FD19CFFC5A00DC8BFD /* IMTableViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewConst.h; sourceTree = "<group>"; };
+		F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewConst.m; sourceTree = "<group>"; };
+		F8F2EA0119CFFCF400DC8BFD /* IMSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSection.h; sourceTree = "<group>"; };
+		F8F2EA0219CFFCF400DC8BFD /* IMSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSection.m; sourceTree = "<group>"; };
+		F8F2EA0519CFFD1000DC8BFD /* IMSectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSectionItem.h; sourceTree = "<group>"; };
+		F8F2EA0619CFFD1000DC8BFD /* IMSectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSectionItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F2E87819CFBF6700DC8BFD /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +95,7 @@
 		F8F2E84319CFBD2700DC8BFD = {
 			isa = PBXGroup;
 			children = (
+				F8F2E87919CFC03200DC8BFD /* src */,
 				F8F2E84E19CFBD2700DC8BFD /* IMTableView */,
 				F8F2E86819CFBD2700DC8BFD /* IMTableViewTests */,
 				F8F2E84D19CFBD2700DC8BFD /* Products */,
@@ -83,8 +116,8 @@
 			children = (
 				F8F2E85319CFBD2700DC8BFD /* AppDelegate.h */,
 				F8F2E85419CFBD2700DC8BFD /* AppDelegate.m */,
-				F8F2E85619CFBD2700DC8BFD /* ViewController.h */,
-				F8F2E85719CFBD2700DC8BFD /* ViewController.m */,
+				F8F2E85619CFBD2700DC8BFD /* IMRootViewController.h */,
+				F8F2E85719CFBD2700DC8BFD /* IMRootViewController.m */,
 				F8F2E85919CFBD2700DC8BFD /* Main.storyboard */,
 				F8F2E85C19CFBD2700DC8BFD /* Images.xcassets */,
 				F8F2E85E19CFBD2700DC8BFD /* LaunchScreen.xib */,
@@ -98,6 +131,7 @@
 			children = (
 				F8F2E85019CFBD2700DC8BFD /* Info.plist */,
 				F8F2E85119CFBD2700DC8BFD /* main.m */,
+				F8F2E87519CFBEDB00DC8BFD /* Podfile */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -106,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F2E86B19CFBD2700DC8BFD /* IMTableViewTests.m */,
+				F8F2E87619CFBF6700DC8BFD /* OpenSource */,
 				F8F2E86919CFBD2700DC8BFD /* Supporting Files */,
 			);
 			path = IMTableViewTests;
@@ -117,6 +152,75 @@
 				F8F2E86A19CFBD2700DC8BFD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8F2E87619CFBF6700DC8BFD /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				F8F2E87719CFBF6700DC8BFD /* Quick.framework */,
+			);
+			path = OpenSource;
+			sourceTree = SOURCE_ROOT;
+		};
+		F8F2E87919CFC03200DC8BFD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F8F2E87A19CFC03200DC8BFD /* Common */,
+				F8F2E87B19CFC03200DC8BFD /* Controller */,
+				F8F2E87C19CFC03200DC8BFD /* Model */,
+				F8F2E87D19CFC03200DC8BFD /* Views */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F8F2E87A19CFC03200DC8BFD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F8F2E9FD19CFFC5A00DC8BFD /* IMTableViewConst.h */,
+				F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F8F2E87B19CFC03200DC8BFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8F2E87C19CFC03200DC8BFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8F2EA0119CFFCF400DC8BFD /* IMSection.h */,
+				F8F2EA0219CFFCF400DC8BFD /* IMSection.m */,
+				F8F2EA0519CFFD1000DC8BFD /* IMSectionItem.h */,
+				F8F2EA0619CFFD1000DC8BFD /* IMSectionItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8F2E87D19CFC03200DC8BFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8F2E87E19CFC03200DC8BFD /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8F2E87E19CFC03200DC8BFD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F8F2E9F819CFF9A900DC8BFD /* IMTableViewCell.h */,
+				F8F2E9F919CFF9A900DC8BFD /* IMTableViewCell.m */,
+				F8F2E87F19CFC0A000DC8BFD /* IMTextfieldTableViewCell.h */,
+				F8F2E88019CFC0A000DC8BFD /* IMTextfieldTableViewCell.m */,
+				F8F2E88319CFD1D100DC8BFD /* IMSwitchTableViewCell.h */,
+				F8F2E88419CFD1D100DC8BFD /* IMSwitchTableViewCell.m */,
+				F8F2E88719CFD30200DC8BFD /* IMButtonTableViewCell.h */,
+				F8F2E88819CFD30200DC8BFD /* IMButtonTableViewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8F2E85819CFBD2700DC8BFD /* ViewController.m in Sources */,
+				F8F2E85819CFBD2700DC8BFD /* IMRootViewController.m in Sources */,
 				F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */,
 				F8F2E85219CFBD2700DC8BFD /* main.m in Sources */,
+				F8F2E88919CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */,
+				F8F2EA0719CFFD1000DC8BFD /* IMSectionItem.m in Sources */,
+				F8F2E88119CFC0A000DC8BFD /* IMTextfieldTableViewCell.m in Sources */,
+				F8F2E9FF19CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */,
+				F8F2E9FA19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */,
+				F8F2E88519CFD1D100DC8BFD /* IMSwitchTableViewCell.m in Sources */,
+				F8F2EA0319CFFCF400DC8BFD /* IMSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +341,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F2E86C19CFBD2700DC8BFD /* IMTableViewTests.m in Sources */,
+				F8F2EA0019CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */,
+				F8F2EA0419CFFCF400DC8BFD /* IMSection.m in Sources */,
+				F8F2E88219CFC0A000DC8BFD /* IMTextfieldTableViewCell.m in Sources */,
+				F8F2EA0819CFFD1000DC8BFD /* IMSectionItem.m in Sources */,
+				F8F2E88619CFD1D100DC8BFD /* IMSwitchTableViewCell.m in Sources */,
+				F8F2E9FB19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */,
+				F8F2E88A19CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +484,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSource",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -385,6 +504,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSource",
 				);
 				INFOPLIST_FILE = IMTableViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -412,6 +532,7 @@
 				F8F2E87119CFBD2700DC8BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8F2E87219CFBD2700DC8BFD /* Build configuration list for PBXNativeTarget "IMTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +541,7 @@
 				F8F2E87419CFBD2700DC8BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
