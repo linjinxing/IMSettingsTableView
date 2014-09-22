@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 i-Move. All rights reserved.
 //
 
-#import "IMTableViewCellItem.h"
+#import "IMTableViewDataSourceCell.h"
 #import "IMTableViewUtility.h"
 
-@interface IMTableViewCellItem()
+@interface IMTableViewDataSourceCell()
 @property(copy, nonatomic) NSString* style;
 @end
 
 
-@implementation IMTableViewCellItem
+@implementation IMTableViewDataSourceCell
 @dynamic style;
 
 - (IMTableViewCellStyle) cellStyle
@@ -24,7 +24,7 @@
 
 - (id)copyWithZone:(NSZone *)zone
 {
-    IMTableViewCellItem* item = [[[self class] alloc] init];
+    IMTableViewDataSourceCell* item = [[[self class] alloc] init];
     item.key = self.key;
     item.imageName = self.imageName;
     item.textTitle = self.textTitle;

@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 i-Move. All rights reserved.
 //
 
-#import "IMTableViewSection.h"
+#import "IMTableViewDataSourceSection.h"
 
-@implementation IMTableViewSection
+@implementation IMTableViewDataSourceSection
 - (id)copyWithZone:(NSZone *)zone
 {
-    IMTableViewSection* sec = [[[self class] alloc] init];
+    IMTableViewDataSourceSection* sec = [[[self class] alloc] init];
     sec.headerText = self.headerText;
     sec.footerText = self.footerText;
     sec.items = self.items;

@@ -14,7 +14,7 @@ UITableViewStyle IMTableViewUtilityStyleFromString(NSString* text)
     return [[@{@"Grouped" : @(UITableViewStyleGrouped),
                @"Plain" : @(UITableViewStylePlain)}
              valueForKey:text]
-                   integerValue];
+                integerValue];
 }
 
 
@@ -29,7 +29,7 @@ IMTableViewCellStyle IMTableViewUtilityCellStyleFromString(NSString* text)
                @"Button" : @(IMTableViewCellStyleButton),
                }
              valueForKey:text]
-             integerValue];
+                integerValue];
 }
 
 

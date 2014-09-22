@@ -10,8 +10,8 @@
 #import "IMTableViewDataSource.h"
 #import "IMTableViewUtility.h"
 
-#import "IMTableViewSection.h"
-#import "IMTableViewCellItem.h"
+#import "IMTableViewDataSourceSection.h"
+#import "IMTableViewDataSourceCell.h"
 
 @interface IMTableViewDataSource()
 @property(copy, nonatomic) NSString* tvStyle;
@@ -40,7 +40,7 @@
     return [[self.sections[section] items] count];
 }
 
-- (IMTableViewCellItem*)itemAtIndexPath:(NSIndexPath*)indexPath
+- (IMTableViewDataSourceCell*)itemAtIndexPath:(NSIndexPath*)indexPath
 {
     return [[self.sections[indexPath.section] items][indexPath.row] copy];
 }

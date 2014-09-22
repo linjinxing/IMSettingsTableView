@@ -11,7 +11,7 @@
 
 @class IMTableViewDataSource;
 
-@interface IMTableViewCellItem : NSObject<NSCopying>
+@interface IMTableViewDataSourceCell : NSObject<NSCopying>
 @property(copy, nonatomic) NSString* key;
 @property(copy, nonatomic) NSString* imageName;
 @property(copy, nonatomic) NSString* textTitle;
