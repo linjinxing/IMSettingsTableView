@@ -11,6 +11,10 @@
 		F86FEFC319D113E100407542 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86FEFC119D113E100407542 /* Setting.plist */; };
 		F86FEFC519D11AC800407542 /* NewUserGroup.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86FEFC419D11AC800407542 /* NewUserGroup.plist */; };
 		F86FEFC619D11AC800407542 /* NewUserGroup.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86FEFC419D11AC800407542 /* NewUserGroup.plist */; };
+		F86FEFC919D1574F00407542 /* IMPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFC819D1574F00407542 /* IMPlistReader.m */; };
+		F86FEFCA19D1574F00407542 /* IMPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFC819D1574F00407542 /* IMPlistReader.m */; };
+		F86FEFCF19D1694A00407542 /* NSObjectAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFCE19D1694A00407542 /* NSObjectAddition.m */; };
+		F86FEFD019D1694A00407542 /* NSObjectAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFCE19D1694A00407542 /* NSObjectAddition.m */; };
 		F8F2E85219CFBD2700DC8BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85119CFBD2700DC8BFD /* main.m */; };
 		F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85419CFBD2700DC8BFD /* AppDelegate.m */; };
 		F8F2E85819CFBD2700DC8BFD /* IMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85719CFBD2700DC8BFD /* IMRootViewController.m */; };
@@ -54,6 +58,12 @@
 /* Begin PBXFileReference section */
 		F86FEFC119D113E100407542 /* Setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Setting.plist; sourceTree = "<group>"; };
 		F86FEFC419D11AC800407542 /* NewUserGroup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NewUserGroup.plist; sourceTree = "<group>"; };
+		F86FEFC719D1574F00407542 /* IMPlistReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPlistReader.h; sourceTree = "<group>"; };
+		F86FEFC819D1574F00407542 /* IMPlistReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPlistReader.m; sourceTree = "<group>"; };
+		F86FEFCB19D1684700407542 /* keypath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keypath.h; sourceTree = "<group>"; };
+		F86FEFCC19D1684700407542 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		F86FEFCD19D1694A00407542 /* NSObjectAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectAddition.h; sourceTree = "<group>"; };
+		F86FEFCE19D1694A00407542 /* NSObjectAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectAddition.m; sourceTree = "<group>"; };
 		F8F2E84C19CFBD2700DC8BFD /* IMTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F2E85019CFBD2700DC8BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F2E85119CFBD2700DC8BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -196,6 +206,10 @@
 		F8F2E87A19CFC03200DC8BFD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F86FEFCB19D1684700407542 /* keypath.h */,
+				F86FEFCC19D1684700407542 /* metamacros.h */,
+				F86FEFCD19D1694A00407542 /* NSObjectAddition.h */,
+				F86FEFCE19D1694A00407542 /* NSObjectAddition.m */,
 				F8F2E9FD19CFFC5A00DC8BFD /* IMTableViewConst.h */,
 				F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */,
 				F8F2EA1119D00DD200DC8BFD /* IMTableViewUtility.h */,
@@ -222,6 +236,8 @@
 				F8F2EA0219CFFCF400DC8BFD /* IMTableViewDataSourceSection.m */,
 				F8F2EA0519CFFD1000DC8BFD /* IMTableViewDataSourceCell.h */,
 				F8F2EA0619CFFD1000DC8BFD /* IMTableViewDataSourceCell.m */,
+				F86FEFC719D1574F00407542 /* IMPlistReader.h */,
+				F86FEFC819D1574F00407542 /* IMPlistReader.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -356,6 +372,7 @@
 				F8F2E85819CFBD2700DC8BFD /* IMRootViewController.m in Sources */,
 				F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */,
 				F8F2E85219CFBD2700DC8BFD /* main.m in Sources */,
+				F86FEFC919D1574F00407542 /* IMPlistReader.m in Sources */,
 				F8F2EA0F19D00C5B00DC8BFD /* IMTableViewController.m in Sources */,
 				F8F2E88919CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */,
 				F8F2EA0719CFFD1000DC8BFD /* IMTableViewDataSourceCell.m in Sources */,
@@ -366,6 +383,7 @@
 				F8F2EA1319D00DD200DC8BFD /* IMTableViewUtility.m in Sources */,
 				F8F2EA0B19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */,
 				F8F2EA0319CFFCF400DC8BFD /* IMTableViewDataSourceSection.m in Sources */,
+				F86FEFCF19D1694A00407542 /* NSObjectAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86FEFD019D1694A00407542 /* NSObjectAddition.m in Sources */,
 				F8F2E86C19CFBD2700DC8BFD /* IMTableViewTests.m in Sources */,
 				F8F2EA0C19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */,
 				F8F2EA1419D00DD200DC8BFD /* IMTableViewUtility.m in Sources */,
@@ -384,6 +403,7 @@
 				F8F2EA1019D00C5B00DC8BFD /* IMTableViewController.m in Sources */,
 				F8F2E9FB19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */,
 				F8F2E88A19CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */,
+				F86FEFCA19D1574F00407542 /* IMPlistReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

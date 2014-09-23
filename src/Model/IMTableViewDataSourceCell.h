@@ -17,6 +17,7 @@
 @property(copy, nonatomic) NSString* textTitle;
 @property(copy, nonatomic) NSString* detailTitle;
 @property(copy, nonatomic) NSString* defaultValue;
+@property(copy, nonatomic) NSString* accessoryType;
 @property(readonly, assign, nonatomic) IMTableViewCellStyle cellStyle;
 
 @property(strong, nonatomic) IMTableViewDataSource* subDataSource;

@@ -10,5 +10,5 @@
 #import "IMTableViewCell.h"
 
 @interface IMTextfieldTableViewCell : IMTableViewCell
-@property(strong, nonatomic, readonly)UITextField* textField;
+@property(strong, nonatomic, readonly) UITextField* textField;
 @end

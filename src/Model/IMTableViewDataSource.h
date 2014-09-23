@@ -20,6 +20,8 @@
 
 + (instancetype)tableViewDataSourceWithDictionary:(NSDictionary*)dict;
 - (NSUInteger)numberOfRowsInSection:(NSInteger)section;
+- (NSString*)headerTextForSection:(NSInteger)section;
+- (NSString*)footerTextForSection:(NSInteger)section;
 - (IMTableViewDataSourceCell*)itemAtIndexPath:(NSIndexPath*)indexPath;
 @end
 

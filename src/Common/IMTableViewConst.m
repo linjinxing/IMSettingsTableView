@@ -38,6 +38,7 @@ NSString* const IMTableViewCellDictionaryKeyDetailTitle = @"detailTitle"   ;
 NSString* const IMTableViewCellDictionaryKeyDefaultValue = @"defaultValue"  ;
 NSString* const IMTableViewCellDictionaryKeyStyle = style       ;
 NSString* const IMTableViewCellDictionaryKeySubDataSource = @"subDataSource" ;
+NSString* const IMTableViewCellDictionaryKeyAccessoryType = @"accessoryType";
 
 /*  IMTableViewStyle */
 NSString* const IMTableViewStyleGroupedString = @"Grouped";
@@ -52,6 +53,7 @@ NSString* const IMTableViewCellStyleTextfieldString = @"Textfield";
 NSString* const IMTableViewCellStyleSwitchString    = @"Switch";
 NSString* const IMTableViewCellStyleButtonString    = @"Button";
 
+
 /* IMTableViewCellReuseIdentifier */
 NSString* const IMTableViewCellReuseIdentifierDefault        = @"IMTableViewCellReuseIdentifierDefault" ;
 NSString* const IMTableViewCellReuseIdentifierStyleValue1    = @"IMTableViewCellReuseIdentifierValue1" ;
@@ -60,7 +62,14 @@ NSString* const IMTableViewCellReuseIdentifierStyleSubtitle  = @"IMTableViewCell
 NSString* const IMTableViewCellReuseIdentifierStyleTextfield = @"IMTableViewCellReuseIdentifierTextfield" ;
 NSString* const IMTableViewCellReuseIdentifierStyleSwitch    = @"IMTableViewCellReuseIdentifierSwitch" ;
 NSString* const IMTableViewCellReuseIdentifierStyleButton    = @"IMTableViewCellReuseIdentifierButton" ;
-           
+
+/* IMTableViewCell Accessory type */
+NSString* const IMTableViewCellAccessoryNone                   = @"None";
+NSString* const IMTableViewCellAccessoryDisclosureIndicator    = @"DisclosureIndicator";
+NSString* const IMTableViewCellAccessoryDetailDisclosureButton = @"DetailDisclosureButton";
+NSString* const IMTableViewCellAccessoryCheckmark              = @"Checkmark";
+NSString* const IMTableViewCellAccessoryDetailButton           = @"DetailButton";
+
 //NSString* const IMTableViewString = @"";
 //NSString* const IMTableViewString = @"";
 //NSString* const IMTableViewString = @"";

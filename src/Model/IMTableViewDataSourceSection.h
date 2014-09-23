@@ -12,4 +12,9 @@
 @property(copy, nonatomic) NSString* headerText;
 @property(copy, nonatomic) NSString* footerText;
 @property(copy, nonatomic) NSArray* cells;
+
++ (instancetype) tableViewDataSourceSectionWithCells:(NSArray*)dictCells;
++ (instancetype) tableViewDataSourceSectionWithCells:(NSArray*)dictCells headerText:(NSString*)htext footerText:(NSString*)fText;
 @end
+
+

@@ -27,7 +27,17 @@
 + (instancetype)tableViewDataSourceWithDictionary:(NSDictionary*)dict
 {
     IMTableViewDataSource* ds = [[[self class] alloc] init];
-//    NSDictionary* dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    ds.tvStyle = [dict valueForKey:IMTableViewDictionaryKeyStyle];
+    ds.title = [dict valueForKey:IMTableViewDictionaryKeyTitle];
+    ds.headerText = [dict valueForKey:IMTableViewDictionaryKeyHeaderText];
+    ds.footerText = [dict valueForKey:IMTableViewDictionaryKeyFooterText];
+    
+    NSArray* strSections = [dict valueForKey:IMTableViewDictionaryKeySections];
+    NSMutableArray* a = [NSMutableArray arrayWithCapacity:[strSections count]];
+    for (NSDictionary* dict in strSections){
+        IMTableViewDataSourceSection* s = [IMTableViewDataSourceSection tableViewDataSourceSectionWithCells:[dict valueForKey:IMTableViewSectionDictionaryKeyCells] headerText:[dict valueForKey:IMTableViewSectionDictionaryKeyHeaderText] footerText:[dict valueForKey:IMTableViewSectionDictionaryKeyFooterText]];
+        if (s) [a addObject:s];
+    }
     return ds;
 }
 
@@ -46,6 +56,15 @@
     return [[self.sections[indexPath.section] items][indexPath.row] copy];
 }
 
+- (NSString*)headerTextForSection:(NSInteger)section
+{
+    return [self.sections[section] headerText];
+}
+
+- (NSString*)footerTextForSection:(NSInteger)section
+{
+    return [self.sections[section] footerText];
+}
 
 - (UITableViewStyle) tableViewStyle
 {

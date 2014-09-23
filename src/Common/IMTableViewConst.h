@@ -43,7 +43,7 @@ FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKeyDetailTitle    ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKeyDefaultValue   ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKeyStyle          ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKeySubDataSource  ;
-//FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKey      ;
+FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKeyAccessoryType  ;
 //FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKey      ;
 //FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKey      ;
 //FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKey      ;
@@ -52,7 +52,7 @@ FOUNDATION_EXTERN NSString* const IMTableViewCellDictionaryKeySubDataSource  ;
 FOUNDATION_EXTERN NSString* const IMTableViewStyleGroupedString ;
 FOUNDATION_EXTERN NSString* const IMTableViewStylePlainString   ;
 
-/*  IMTableViewCellStyle */
+/*  IMTableViewCell Style */
 FOUNDATION_EXTERN NSString* const IMTableViewCellStyleDefaultString   ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellStyleValue1String    ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellStyleValue2String    ;
@@ -62,7 +62,7 @@ FOUNDATION_EXTERN NSString* const IMTableViewCellStyleSwitchString    ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellStyleButtonString    ;
 
 
-/* IMTableViewCellReuseIdentifier */
+/* IMTableViewCell Reuse Identifier */
 FOUNDATION_EXTERN NSString* const IMTableViewCellReuseIdentifierDefault        ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellReuseIdentifierStyleValue1    ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellReuseIdentifierStyleValue2    ;
@@ -71,7 +71,11 @@ FOUNDATION_EXTERN NSString* const IMTableViewCellReuseIdentifierStyleTextfield ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellReuseIdentifierStyleSwitch    ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellReuseIdentifierStyleButton;
 
-
-
+/* IMTableViewCell Accessory type */
+FOUNDATION_EXTERN NSString* const IMTableViewCellAccessoryNone                   ;
+FOUNDATION_EXTERN NSString* const IMTableViewCellAccessoryDisclosureIndicator    ;
+FOUNDATION_EXTERN NSString* const IMTableViewCellAccessoryDetailDisclosureButton ;
+FOUNDATION_EXTERN NSString* const IMTableViewCellAccessoryCheckmark              ;
+FOUNDATION_EXTERN NSString* const IMTableViewCellAccessoryDetailButton           ;
 
 

@@ -14,4 +14,6 @@ UITableViewStyle IMTableViewUtilityStyleFromString(NSString* text);
 
 IMTableViewCellStyle IMTableViewUtilityCellStyleFromString(NSString* text);
 
+UITableViewCellAccessoryType IMTableViewUtilityCellAccessoryTypeFromString(NSString* text);
+
 NSString* IMTableViewUtilityCellReuseIdentifierFromStyle(IMTableViewCellStyle style);

@@ -32,6 +32,20 @@ IMTableViewCellStyle IMTableViewUtilityCellStyleFromString(NSString* text)
                 integerValue];
 }
 
+UITableViewCellAccessoryType IMTableViewUtilityCellAccessoryTypeFromString(NSString* text)
+{
+    return [[@{IMTableViewCellAccessoryNone   : @(UITableViewCellAccessoryNone),
+               IMTableViewCellAccessoryDisclosureIndicator    : @(UITableViewCellAccessoryDisclosureIndicator),
+               IMTableViewCellAccessoryDetailDisclosureButton    : @(UITableViewCellAccessoryDetailDisclosureButton),
+               IMTableViewCellAccessoryCheckmark  : @(UITableViewCellAccessoryCheckmark),
+               IMTableViewCellAccessoryDetailButton : @(UITableViewCellAccessoryDetailButton),
+//               IMTableViewCellStyleSwitchString    : @(IMTableViewCellStyleSwitch),
+//               IMTableViewCellStyleButtonString    : @(IMTableViewCellStyleButton),
+               }
+             valueForKey:text]
+            integerValue];
+}
+
 
 NSString* IMTableViewUtilityCellReuseIdentifierFromStyle(IMTableViewCellStyle style)
 {
