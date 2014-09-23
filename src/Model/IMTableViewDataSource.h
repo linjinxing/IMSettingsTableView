@@ -11,11 +11,12 @@
 @class IMTableViewDataSourceCell;
 
 @interface IMTableViewDataSource : NSObject<NSCopying>
-@property(assign, nonatomic, readonly) UITableViewStyle tableViewStyle;
+
 @property(copy, nonatomic, readonly) NSString* title;
 @property(copy, nonatomic, readonly) NSString* headerText;
 @property(copy, nonatomic, readonly) NSString* footerText;
 @property(assign, nonatomic, readonly) NSUInteger numOfSections;
+@property(assign, nonatomic, readonly) UITableViewStyle tableViewStyle;
 
 + (instancetype)tableViewDataSourceWithPlistPath:(NSString*)path;
 - (NSUInteger)numberOfRowsInSection:(NSInteger)section;
