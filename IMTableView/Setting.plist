@@ -13,19 +13,95 @@
 	<key>sections</key>
 	<array>
 		<dict>
-			<key>headerText</key>
-			<string></string>
-			<key>footerText</key>
-			<string></string>
-			<key>items</key>
+			<key>cells</key>
 			<array>
 				<dict>
 					<key>key</key>
 					<string></string>
 					<key>imageName</key>
 					<string></string>
-					<key>textTitle</key>
+					<key>title</key>
+					<string>分组</string>
+					<key>detailTitle</key>
 					<string></string>
+					<key>defaultValue</key>
+					<string></string>
+					<key>cellStyle</key>
+					<string>Default</string>
+					<key>subDataSource</key>
+					<dict>
+						<key>style</key>
+						<string>Grouped</string>
+						<key>sections</key>
+						<array>
+							<dict>
+								<key>cells</key>
+								<array>
+									<dict>
+										<key>key</key>
+										<string></string>
+										<key>imageName</key>
+										<string></string>
+										<key>textTitle</key>
+										<string>家庭</string>
+										<key>detailTitle</key>
+										<string></string>
+										<key>defaultValue</key>
+										<string></string>
+										<key>cellStyle</key>
+										<string>Default</string>
+										<key>subDataSource</key>
+										<dict>
+											<key>style</key>
+											<string>Grouped</string>
+											<key>sections</key>
+											<array/>
+										</dict>
+									</dict>
+									<dict>
+										<key>key</key>
+										<string></string>
+										<key>imageName</key>
+										<string></string>
+										<key>textTitle</key>
+										<string>访客</string>
+										<key>detailTitle</key>
+										<string></string>
+										<key>defaultValue</key>
+										<string></string>
+										<key>cellStyle</key>
+										<string>Default</string>
+										<key>subDataSource</key>
+										<dict/>
+									</dict>
+									<dict>
+										<key>key</key>
+										<string></string>
+										<key>imageName</key>
+										<string></string>
+										<key>textTitle</key>
+										<string></string>
+										<key>detailTitle</key>
+										<string>黑名单</string>
+										<key>defaultValue</key>
+										<string></string>
+										<key>cellStyle</key>
+										<string>Default</string>
+										<key>subDataSource</key>
+										<dict/>
+									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+				</dict>
+				<dict>
+					<key>key</key>
+					<string></string>
+					<key>imageName</key>
+					<string></string>
+					<key>textTitle</key>
+					<string>wifi设置</string>
 					<key>detailTitle</key>
 					<string></string>
 					<key>defaultValue</key>
@@ -43,7 +119,7 @@
 					<key>textTitle</key>
 					<string></string>
 					<key>detailTitle</key>
-					<string></string>
+					<string>外网设置</string>
 					<key>defaultValue</key>
 					<string></string>
 					<key>cellStyle</key>
@@ -57,7 +133,7 @@
 					<key>imageName</key>
 					<string></string>
 					<key>textTitle</key>
-					<string></string>
+					<string>管理密码</string>
 					<key>detailTitle</key>
 					<string></string>
 					<key>defaultValue</key>
@@ -73,23 +149,7 @@
 					<key>imageName</key>
 					<string></string>
 					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
+					<string>蓝牙</string>
 					<key>detailTitle</key>
 					<string></string>
 					<key>defaultValue</key>
@@ -115,7 +175,7 @@
 			<string></string>
 			<key>footerText</key>
 			<string></string>
-			<key>items</key>
+			<key>cells</key>
 			<array>
 				<dict>
 					<key>key</key>
@@ -123,7 +183,7 @@
 					<key>imageName</key>
 					<string></string>
 					<key>textTitle</key>
-					<string></string>
+					<string>关闭路由器</string>
 					<key>detailTitle</key>
 					<string></string>
 					<key>defaultValue</key>
@@ -139,7 +199,7 @@
 					<key>imageName</key>
 					<string></string>
 					<key>textTitle</key>
-					<string></string>
+					<string>格式化硬盘</string>
 					<key>detailTitle</key>
 					<string></string>
 					<key>defaultValue</key>
@@ -155,7 +215,7 @@
 					<key>imageName</key>
 					<string></string>
 					<key>textTitle</key>
-					<string></string>
+					<string>恢复出厂设置</string>
 					<key>detailTitle</key>
 					<string></string>
 					<key>defaultValue</key>
@@ -171,379 +231,7 @@
 					<key>imageName</key>
 					<string></string>
 					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>headerText</key>
-			<string></string>
-			<key>footerText</key>
-			<string></string>
-			<key>items</key>
-			<array>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>headerText</key>
-			<string></string>
-			<key>footerText</key>
-			<string></string>
-			<key>items</key>
-			<array>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>headerText</key>
-			<string></string>
-			<key>footerText</key>
-			<string></string>
-			<key>items</key>
-			<array>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>headerText</key>
-			<string></string>
-			<key>footerText</key>
-			<string></string>
-			<key>items</key>
-			<array>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
-					<key>detailTitle</key>
-					<string></string>
-					<key>defaultValue</key>
-					<string></string>
-					<key>cellStyle</key>
-					<string>Default</string>
-					<key>subDataSource</key>
-					<dict/>
-				</dict>
-				<dict>
-					<key>key</key>
-					<string></string>
-					<key>imageName</key>
-					<string></string>
-					<key>textTitle</key>
-					<string></string>
+					<string>关于</string>
 					<key>detailTitle</key>
 					<string></string>
 					<key>defaultValue</key>

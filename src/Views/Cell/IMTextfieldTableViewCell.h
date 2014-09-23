@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IMTableViewCell.h"
 
-@interface IMTextfieldTableViewCell : UITableViewCell
+@interface IMTextfieldTableViewCell : IMTableViewCell
 @property(strong, nonatomic, readonly)UITextField* textField;
 @end

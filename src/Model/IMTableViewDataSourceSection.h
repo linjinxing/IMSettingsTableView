@@ -11,5 +11,5 @@
 @interface IMTableViewDataSourceSection : NSObject<NSCopying>
 @property(copy, nonatomic) NSString* headerText;
 @property(copy, nonatomic) NSString* footerText;
-@property(copy, nonatomic) NSArray* items;
+@property(copy, nonatomic) NSArray* cells;
 @end

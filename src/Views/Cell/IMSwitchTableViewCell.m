@@ -14,15 +14,11 @@
 
 @implementation IMSwitchTableViewCell
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+- (void)setupSubviews
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        UISwitch* s = [[UISwitch alloc] init];
-        self.accessoryView = s;
-        self.uiswitch = s;
-    }
-    return self;
+    UISwitch* s = [[UISwitch alloc] init];
+    self.accessoryView = s;
+    self.uiswitch = s;
 }
 
 - (void)awakeFromNib {

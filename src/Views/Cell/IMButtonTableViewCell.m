@@ -14,15 +14,11 @@
 
 @implementation IMButtonTableViewCell
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+- (void)setupSubviews
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.accessoryView = btn;
-        self.button = btn;
-    }
-    return self;
+    UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.accessoryView = btn;
+    self.button = btn;
 }
 
 - (void)awakeFromNib {

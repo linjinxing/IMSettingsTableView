@@ -14,7 +14,7 @@
     IMTableViewDataSourceSection* sec = [[[self class] alloc] init];
     sec.headerText = self.headerText;
     sec.footerText = self.footerText;
-    sec.items = self.items;
+    sec.cells = self.cells;
     return sec;
 }
 @end

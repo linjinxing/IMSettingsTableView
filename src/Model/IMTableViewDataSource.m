@@ -24,9 +24,10 @@
 @implementation IMTableViewDataSource
 @dynamic numOfSections;
 
-+ (instancetype)tableViewDataSourceWithPlistPath:(NSString*)path
++ (instancetype)tableViewDataSourceWithDictionary:(NSDictionary*)dict
 {
     IMTableViewDataSource* ds = [[[self class] alloc] init];
+//    NSDictionary* dict = [NSDictionary dictionaryWithContentsOfFile:path];
     return ds;
 }
 

@@ -15,14 +15,10 @@
 
 @implementation IMTextfieldTableViewCell
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+- (void)setupSubviews
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        self.textField = [[UITextField alloc] init];
-        [self.contentView addSubview:self.textField];
-    }
-    return self;
+    self.textField = [[UITextField alloc] init];
+    [self.contentView addSubview:self.textField];
 }
 
 - (void)awakeFromNib {

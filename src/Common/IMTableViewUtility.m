@@ -11,8 +11,8 @@
 
 UITableViewStyle IMTableViewUtilityStyleFromString(NSString* text)
 {
-    return [[@{@"Grouped" : @(UITableViewStyleGrouped),
-               @"Plain" : @(UITableViewStylePlain)}
+    return [[@{ IMTableViewStyleGroupedString : @(UITableViewStyleGrouped),
+               IMTableViewStylePlainString : @(UITableViewStylePlain)}
              valueForKey:text]
                 integerValue];
 }
@@ -20,16 +20,31 @@ UITableViewStyle IMTableViewUtilityStyleFromString(NSString* text)
 
 IMTableViewCellStyle IMTableViewUtilityCellStyleFromString(NSString* text)
 {
-    return [[@{@"Default" : @(IMTableViewCellStyleDefault),
-               @"Value1" : @(IMTableViewCellStyleValue1),
-               @"Value2" : @(IMTableViewCellStyleValue2),
-               @"Subtitle" : @(IMTableViewCellStyleSubtitle),
-               @"Textfield" : @(IMTableViewCellStyleTextfield),
-               @"Switch" : @(IMTableViewCellStyleSwitch),
-               @"Button" : @(IMTableViewCellStyleButton),
+    return [[@{IMTableViewCellStyleDefaultString   : @(IMTableViewCellStyleDefault),
+               IMTableViewCellStyleValue1String    : @(IMTableViewCellStyleValue1),
+               IMTableViewCellStyleValue2String    : @(IMTableViewCellStyleValue2),
+               IMTableViewCellStyleSubtitleString  : @(IMTableViewCellStyleSubtitle),
+               IMTableViewCellStyleTextfieldString : @(IMTableViewCellStyleTextfield),
+               IMTableViewCellStyleSwitchString    : @(IMTableViewCellStyleSwitch),
+               IMTableViewCellStyleButtonString    : @(IMTableViewCellStyleButton),
                }
              valueForKey:text]
                 integerValue];
 }
+
+
+NSString* IMTableViewUtilityCellReuseIdentifierFromStyle(IMTableViewCellStyle style)
+{
+    return [@{ @(IMTableViewCellStyleDefault)    : IMTableViewCellReuseIdentifierDefault ,
+                @(IMTableViewCellStyleValue1)    : IMTableViewCellReuseIdentifierStyleValue1 ,
+                @(IMTableViewCellStyleValue2)    : IMTableViewCellReuseIdentifierStyleValue2 ,
+                @(IMTableViewCellStyleSubtitle)  : IMTableViewCellReuseIdentifierStyleSubtitle,
+                @(IMTableViewCellStyleTextfield) : IMTableViewCellReuseIdentifierStyleTextfield ,
+                @(IMTableViewCellStyleSwitch)    : IMTableViewCellReuseIdentifierStyleSwitch,
+                @(IMTableViewCellStyleButton)    : IMTableViewCellReuseIdentifierStyleButton
+               }
+             objectForKey:@(style)];
+}
+
 
 

@@ -19,5 +19,5 @@
 @property(copy, nonatomic) NSString* defaultValue;
 @property(readonly, assign, nonatomic) IMTableViewCellStyle cellStyle;
 
-@property(copy, nonatomic) IMTableViewDataSource* subDataSource;
+@property(strong, nonatomic) IMTableViewDataSource* subDataSource;
 @end

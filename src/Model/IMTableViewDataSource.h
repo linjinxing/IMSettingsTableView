@@ -18,7 +18,7 @@
 @property(assign, nonatomic, readonly) NSUInteger numOfSections;
 @property(assign, nonatomic, readonly) UITableViewStyle tableViewStyle;
 
-+ (instancetype)tableViewDataSourceWithPlistPath:(NSString*)path;
++ (instancetype)tableViewDataSourceWithDictionary:(NSDictionary*)dict;
 - (NSUInteger)numberOfRowsInSection:(NSInteger)section;
 - (IMTableViewDataSourceCell*)itemAtIndexPath:(NSIndexPath*)indexPath;
 @end
