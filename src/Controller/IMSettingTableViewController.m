@@ -20,12 +20,13 @@
 #define ToNSValue(val) [NSValue valueWithPointer:&val]
 
 @interface IMSettingTableViewController()
-@property(strong, nonatomic)IMSettingDataSource* dataSrc;
+@property(strong, nonatomic) id<IMSettingDataSource> dataSrc;
+
 @end
 
 @implementation IMSettingTableViewController
 
-+ (instancetype)tableViewControllerWithDataSource:(IMSettingDataSource* )dataSrc
++ (instancetype)tableViewControllerWithDataSource:(id<IMSettingDataSource>)dataSrc
 {
     IMSettingTableViewController* tableViewCtrl = [[[self class] alloc] initWithStyle:dataSrc.tableViewStyle];
     tableViewCtrl.dataSrc = dataSrc;
@@ -84,22 +85,24 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    IMSettingDataSourceSectonItem* dataSrcItem = [self.dataSrc itemAtIndexPath:indexPath];
+    id<IMSettingDataSourceSectonItem> dataSrcItem = [self.dataSrc itemAtIndexPath:indexPath];
     IMTableViewCellStyle style = dataSrcItem.cellStyle;
     NSString* identifier = IMTableViewUtilityCellReuseIdentifierFromStyle(style);
     UITableViewCell* cell = nil;
     Class cls = [self registerCellClassWithStyle:style];
     cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (nil == cell) {
-        cell = [[cls alloc] initWithStyle:(UITableViewCellStyle)style reuseIdentifier:identifier];
+        if ([UITableViewCell class] == cls) {
+            cell = [[cls alloc] initWithStyle:(UITableViewCellStyle)style reuseIdentifier:identifier];
+            if ([dataSrcItem.accessoryType length]) {
+                cell.accessoryType = IMTableViewUtilityCellAccessoryTypeFromString(dataSrcItem.accessoryType);
+            }
+        }else{
+            cell = [[cls alloc] initWithStyle:style reuseIdentifier:identifier item:dataSrcItem];
+        }
+        
         if ([dataSrcItem.textTitle length]) {
             cell.textLabel.text = dataSrcItem.textTitle;
-        }
-        if ([dataSrcItem.accessoryType length]) {
-            cell.accessoryType = IMTableViewUtilityCellAccessoryTypeFromString(dataSrcItem.accessoryType);
-        }
-        if ([UITableViewCell class] != cls) {
-            
         }
     }
     return cell;

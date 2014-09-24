@@ -7,18 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "IMTableViewConst.h"
+#import "IMSettingProtocol.h"
 
-@class IMSettingDataSource;
+@interface IMSettingDataSourceSectonItem : NSObject<IMSettingDataSourceSectonItem, NSCopying>
 
-@interface IMSettingDataSourceSectonItem : NSObject<NSCopying>
-@property(copy, nonatomic) NSString* key;
-@property(copy, nonatomic) NSString* imageName;
-@property(copy, nonatomic) NSString* textTitle;
-@property(copy, nonatomic) NSString* detailTitle;
-@property(copy, nonatomic) NSString* defaultValue;
-@property(copy, nonatomic) NSString* accessoryType;
-@property(readonly, assign, nonatomic) IMTableViewCellStyle cellStyle;
-
-@property(strong, nonatomic) IMSettingDataSource* subDataSource;
 @end

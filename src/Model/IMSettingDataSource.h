@@ -8,21 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@class IMSettingDataSourceSectonItem;
+#import "IMTableViewConst.h"
+#import "IMSettingProtocol.h"
 
-@interface IMSettingDataSource : NSObject<NSCopying>
-
-@property(copy, nonatomic, readonly) NSString* title;
-@property(copy, nonatomic, readonly) NSString* headerText;
-@property(copy, nonatomic, readonly) NSString* footerText;
-@property(assign, nonatomic, readonly) NSUInteger numOfSections;
-@property(assign, nonatomic, readonly) UITableViewStyle tableViewStyle;
-
+@interface IMSettingDataSource : NSObject<IMSettingDataSource, NSCopying>
 + (instancetype)tableViewDataSourceWithDictionary:(NSDictionary*)dict;
-- (NSUInteger)numberOfRowsInSection:(NSInteger)section;
-- (NSString*)headerTextForSection:(NSInteger)section;
-- (NSString*)footerTextForSection:(NSInteger)section;
-- (IMSettingDataSourceSectonItem*)itemAtIndexPath:(NSIndexPath*)indexPath;
 @end
 
 

@@ -17,6 +17,13 @@
 
 
 @implementation IMSettingDataSourceSectonItem
+@synthesize key,
+            imageName,
+            textTitle,
+            detailTitle,
+            defaultValue,
+            accessoryType,
+            subDataSource;
 @dynamic style;
 
 - (IMTableViewCellStyle) cellStyle

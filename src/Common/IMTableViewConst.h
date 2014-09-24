@@ -11,18 +11,6 @@
 
 FOUNDATION_EXTERN const float IMTableViewControlSpace ;
 
-typedef NS_ENUM(NSUInteger, IMTableViewCellStyle){
-    IMTableViewCellStyleDefault = UITableViewCellStyleDefault,
-    IMTableViewCellStyleValue1 = UITableViewCellStyleValue1,
-    IMTableViewCellStyleValue2 = UITableViewCellStyleValue2,
-    IMTableViewCellStyleSubtitle = UITableViewCellStyleSubtitle,
-    IMTableViewCellStyleTextfield,
-    IMTableViewCellStyleSwitch,
-    IMTableViewCellStyleButton,
-    IMTableViewCellStylePassword
-};
-
-
 /*  IMTableView Dictionary key */
 FOUNDATION_EXTERN NSString* const IMTableViewDictionaryKeyKey ;
 FOUNDATION_EXTERN NSString* const IMTableViewDictionaryKeyHeaderText ;

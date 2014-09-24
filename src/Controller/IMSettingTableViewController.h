@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class IMSettingDataSource;
+@protocol IMSettingDataSource;
 
 @interface IMSettingTableViewController : UITableViewController;
-+ (instancetype)tableViewControllerWithDataSource:(IMSettingDataSource* )dataSrc;
++ (instancetype)tableViewControllerWithDataSource:(id<IMSettingDataSource>)dataSrc;
 @end
 
 

@@ -18,12 +18,12 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    return [self initWithStyle:style reuseIdentifier:reuseIdentifier item:nil];
+    return [self initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:reuseIdentifier item:nil];
 }
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(IMSettingDataSourceSectonItem*)item
+- (instancetype)initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(IMSettingDataSourceSectonItem*)item
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    self = [super initWithStyle:(UITableViewCellStyle)style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self setupSubviews];
     }
@@ -40,9 +40,5 @@
     // Configure the view for the selected state
 }
 
-- (void)setValuesWithItem:(IMSettingDataSourceSectonItem*)item
-{
-        
-}
 
 @end

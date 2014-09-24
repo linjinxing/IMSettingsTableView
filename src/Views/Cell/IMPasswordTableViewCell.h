@@ -7,7 +7,8 @@
 //
 
 #import "IMTableViewCell.h"
+#import "IMTextfieldTableViewCell.h"
 
-@interface IMPasswordTableViewCell : IMTableViewCell
+@interface IMPasswordTableViewCell : IMTextfieldTableViewCell
 
 @end
