@@ -21,7 +21,6 @@
 		F89D293419D2965B0048939C /* IMSettingSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D293219D2965B0048939C /* IMSettingSaver.m */; };
 		F89D293C19D29B630048939C /* IMSettingDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D293B19D29B630048939C /* IMSettingDataSourceTests.m */; };
 		F89D293E19D29B980048939C /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = F89D293D19D29B980048939C /* test.plist */; };
-		F89D294219D29D290048939C /* tests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89D294119D29D290048939C /* tests.xcassets */; };
 		F8F2E85219CFBD2700DC8BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85119CFBD2700DC8BFD /* main.m */; };
 		F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85419CFBD2700DC8BFD /* AppDelegate.m */; };
 		F8F2E85819CFBD2700DC8BFD /* IMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85719CFBD2700DC8BFD /* IMRootViewController.m */; };
@@ -78,7 +77,6 @@
 		F89D293519D299250048939C /* IMSettingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSettingProtocol.h; sourceTree = "<group>"; };
 		F89D293B19D29B630048939C /* IMSettingDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSettingDataSourceTests.m; sourceTree = "<group>"; };
 		F89D293D19D29B980048939C /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
-		F89D294119D29D290048939C /* tests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = tests.xcassets; sourceTree = "<group>"; };
 		F8F2E84C19CFBD2700DC8BFD /* IMSettingTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMSettingTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F2E85019CFBD2700DC8BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F2E85119CFBD2700DC8BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				F8F2E86A19CFBD2700DC8BFD /* Info.plist */,
-				F89D294119D29D290048939C /* tests.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -381,7 +378,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F89D293E19D29B980048939C /* test.plist in Resources */,
-				F89D294219D29D290048939C /* tests.xcassets in Resources */,
 				F86FEFC619D11AC800407542 /* NewUserGroup.plist in Resources */,
 				F86FEFC319D113E100407542 /* Setting.plist in Resources */,
 			);
