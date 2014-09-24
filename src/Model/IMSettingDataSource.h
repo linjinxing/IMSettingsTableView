@@ -12,7 +12,7 @@
 #import "IMSettingProtocol.h"
 
 @interface IMSettingDataSource : NSObject<IMSettingDataSource, NSCopying>
-+ (instancetype)tableViewDataSourceWithDictionary:(NSDictionary*)dict;
++ (instancetype)settingDataSourceWithDictionary:(NSDictionary*)dict;
 @end
 
 

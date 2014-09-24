@@ -43,7 +43,7 @@
 					<key>subDataSource</key>
 					<dict>
 						<key>style</key>
-						<string>Grouped</string>
+						<string>Plain</string>
 						<key>title</key>
 						<string>section0item0subdatasourceTitle</string>
 						<key>sections</key>
@@ -65,35 +65,29 @@
 									</dict>
 									<dict>
 										<key>key</key>
-										<string></string>
-										<key>imageName</key>
-										<string></string>
+										<string>key</string>
 										<key>textTitle</key>
-										<string>访客</string>
+										<string>textTitle</string>
 										<key>detailTitle</key>
-										<string></string>
+										<string>detailTitle</string>
 										<key>defaultValue</key>
-										<string></string>
+										<string>defaultValue</string>
 										<key>cellStyle</key>
 										<string>Default</string>
-										<key>subDataSource</key>
-										<dict/>
 									</dict>
 									<dict>
 										<key>key</key>
-										<string></string>
+										<string>1</string>
 										<key>imageName</key>
-										<string></string>
+										<string>2</string>
 										<key>textTitle</key>
-										<string></string>
+										<string>3</string>
 										<key>detailTitle</key>
-										<string>黑名单</string>
+										<string>4</string>
 										<key>defaultValue</key>
-										<string></string>
+										<string>5</string>
 										<key>cellStyle</key>
 										<string>Default</string>
-										<key>subDataSource</key>
-										<dict/>
 									</dict>
 								</array>
 							</dict>
@@ -136,9 +130,9 @@
 					<key>textTitle</key>
 					<string>s0i4textTitle</string>
 					<key>detailTitle</key>
-					<string>s0i5detailTitle</string>
+					<string>s0i4detailTitle</string>
 					<key>defaultValue</key>
-					<string>ttDefaultValue</string>
+					<string>s0i4DefaultValue</string>
 					<key>cellStyle</key>
 					<string>Textfield</string>
 				</dict>
@@ -184,9 +178,9 @@
 		</dict>
 		<dict>
 			<key>headerText</key>
-			<string>item1headerText</string>
+			<string>s1headerText</string>
 			<key>footerText</key>
-			<string>item1footerText</string>
+			<string>s1footerText</string>
 			<key>cells</key>
 			<array>
 				<dict>

@@ -24,7 +24,7 @@
 @implementation IMSettingDataSource
 @dynamic numOfSections;
 
-+ (instancetype)tableViewDataSourceWithDictionary:(NSDictionary*)dict
++ (instancetype)settingDataSourceWithDictionary:(NSDictionary*)dict
 {
     IMSettingDataSource* ds = [[[self class] alloc] init];
     ds.tvStyle = [dict valueForKey:IMTableViewDictionaryKeyStyle];

@@ -20,8 +20,6 @@
 #define ToNSValue(val) [NSValue valueWithPointer:&val]
 
 @interface IMSettingTableViewController()
-@property(strong, nonatomic) id<IMSettingDataSource> dataSrc;
-
 @end
 
 @implementation IMSettingTableViewController

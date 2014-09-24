@@ -12,6 +12,7 @@
 @protocol IMSettingDataSource;
 
 @interface IMSettingTableViewController : UITableViewController;
+@property(strong, nonatomic) id<IMSettingDataSource> dataSrc;
 + (instancetype)tableViewControllerWithDataSource:(id<IMSettingDataSource>)dataSrc;
 @end
 
