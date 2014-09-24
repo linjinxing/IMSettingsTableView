@@ -7,6 +7,7 @@
 //
 
 #import "IMTableViewCell.h"
+#import "IMSettingDataSourceSectonItem.h"
 
 @implementation IMTableViewCell
 
@@ -16,6 +17,11 @@
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    return [self initWithStyle:style reuseIdentifier:reuseIdentifier item:nil];
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(IMSettingDataSourceSectonItem*)item
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
@@ -32,6 +38,11 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setValuesWithItem:(IMSettingDataSourceSectonItem*)item
+{
+        
 }
 
 @end

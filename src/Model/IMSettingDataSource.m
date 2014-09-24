@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IMTableViewDataSource.h"
+#import "IMSettingDataSource.h"
 #import "IMTableViewUtility.h"
 
-#import "IMTableViewDataSourceSection.h"
-#import "IMTableViewDataSourceCell.h"
+#import "IMSettingDataSourceSection.h"
+#import "IMSettingDataSourceSectonItem.h"
 
-@interface IMTableViewDataSource()
+@interface IMSettingDataSource()
 @property(copy, nonatomic) NSString* tvStyle;
 @property(copy, nonatomic) NSString* title;
 @property(copy, nonatomic) NSString* headerText;
@@ -21,12 +21,12 @@
 @property(copy, nonatomic) NSArray* sections;
 @end
 
-@implementation IMTableViewDataSource
+@implementation IMSettingDataSource
 @dynamic numOfSections;
 
 + (instancetype)tableViewDataSourceWithDictionary:(NSDictionary*)dict
 {
-    IMTableViewDataSource* ds = [[[self class] alloc] init];
+    IMSettingDataSource* ds = [[[self class] alloc] init];
     ds.tvStyle = [dict valueForKey:IMTableViewDictionaryKeyStyle];
     ds.title = [dict valueForKey:IMTableViewDictionaryKeyTitle];
     ds.headerText = [dict valueForKey:IMTableViewDictionaryKeyHeaderText];
@@ -35,7 +35,7 @@
     NSArray* strSections = [dict valueForKey:IMTableViewDictionaryKeySections];
     NSMutableArray* a = [NSMutableArray arrayWithCapacity:[strSections count]];
     for (NSDictionary* dict in strSections){
-        IMTableViewDataSourceSection* s = [IMTableViewDataSourceSection tableViewDataSourceSectionWithCells:[dict valueForKey:IMTableViewSectionDictionaryKeyCells] headerText:[dict valueForKey:IMTableViewSectionDictionaryKeyHeaderText] footerText:[dict valueForKey:IMTableViewSectionDictionaryKeyFooterText]];
+        IMSettingDataSourceSection* s = [IMSettingDataSourceSection tableViewDataSourceSectionWithCells:[dict valueForKey:IMTableViewSectionDictionaryKeyCells] headerText:[dict valueForKey:IMTableViewSectionDictionaryKeyHeaderText] footerText:[dict valueForKey:IMTableViewSectionDictionaryKeyFooterText]];
         if (s) [a addObject:s];
     }
     return ds;
@@ -51,7 +51,7 @@
     return [[self.sections[section] items] count];
 }
 
-- (IMTableViewDataSourceCell*)itemAtIndexPath:(NSIndexPath*)indexPath
+- (IMSettingDataSourceSectonItem*)itemAtIndexPath:(NSIndexPath*)indexPath
 {
     return [[self.sections[indexPath.section] items][indexPath.row] copy];
 }
@@ -73,7 +73,7 @@
 
 - (id)copyWithZone:(NSZone *)zone
 {
-    IMTableViewDataSource* ds = [[[self class] alloc] init];
+    IMSettingDataSource* ds = [[[self class] alloc] init];
     ds.title = self.title;
     ds.headerText = self.headerText;
     ds.footerText = self.footerText;

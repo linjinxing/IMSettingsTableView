@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "IMTableViewConst.h"
 
-@class IMTableViewDataSource;
+@class IMSettingDataSource;
 
-@interface IMTableViewDataSourceCell : NSObject<NSCopying>
+@interface IMSettingDataSourceSectonItem : NSObject<NSCopying>
 @property(copy, nonatomic) NSString* key;
 @property(copy, nonatomic) NSString* imageName;
 @property(copy, nonatomic) NSString* textTitle;
@@ -20,5 +20,5 @@
 @property(copy, nonatomic) NSString* accessoryType;
 @property(readonly, assign, nonatomic) IMTableViewCellStyle cellStyle;
 
-@property(strong, nonatomic) IMTableViewDataSource* subDataSource;
+@property(strong, nonatomic) IMSettingDataSource* subDataSource;
 @end

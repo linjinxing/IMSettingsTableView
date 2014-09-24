@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8F2E84B19CFBD2700DC8BFD"
-               BuildableName = "IMTableView.app"
-               BlueprintName = "IMTableView"
-               ReferencedContainer = "container:IMTableView.xcodeproj">
+               BuildableName = "IMSettingTableView.app"
+               BlueprintName = "IMSettingTableView"
+               ReferencedContainer = "container:IMSettingTableView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8F2E86419CFBD2700DC8BFD"
-               BuildableName = "IMTableViewTests.xctest"
-               BlueprintName = "IMTableViewTests"
-               ReferencedContainer = "container:IMTableView.xcodeproj">
+               BuildableName = "IMSettingTableViewTests.xctest"
+               BlueprintName = "IMSettingTableViewTests"
+               ReferencedContainer = "container:IMSettingTableView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8F2E86419CFBD2700DC8BFD"
-               BuildableName = "IMTableViewTests.xctest"
-               BlueprintName = "IMTableViewTests"
-               ReferencedContainer = "container:IMTableView.xcodeproj">
+               BuildableName = "IMSettingTableViewTests.xctest"
+               BlueprintName = "IMSettingTableViewTests"
+               ReferencedContainer = "container:IMSettingTableView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8F2E84B19CFBD2700DC8BFD"
-            BuildableName = "IMTableView.app"
-            BlueprintName = "IMTableView"
-            ReferencedContainer = "container:IMTableView.xcodeproj">
+            BuildableName = "IMSettingTableView.app"
+            BlueprintName = "IMSettingTableView"
+            ReferencedContainer = "container:IMSettingTableView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8F2E84B19CFBD2700DC8BFD"
-            BuildableName = "IMTableView.app"
-            BlueprintName = "IMTableView"
-            ReferencedContainer = "container:IMTableView.xcodeproj">
+            BuildableName = "IMSettingTableView.app"
+            BlueprintName = "IMSettingTableView"
+            ReferencedContainer = "container:IMSettingTableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8F2E84B19CFBD2700DC8BFD"
-            BuildableName = "IMTableView.app"
-            BlueprintName = "IMTableView"
-            ReferencedContainer = "container:IMTableView.xcodeproj">
+            BuildableName = "IMSettingTableView.app"
+            BlueprintName = "IMSettingTableView"
+            ReferencedContainer = "container:IMSettingTableView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

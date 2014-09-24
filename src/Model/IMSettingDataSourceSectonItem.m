@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 i-Move. All rights reserved.
 //
 
-#import "IMTableViewDataSourceCell.h"
+#import "IMSettingDataSourceSectonItem.h"
 #import "IMTableViewUtility.h"
 #import "NSObjectAddition.h"
 #import "keypath.h"
 
-@interface IMTableViewDataSourceCell()
+@interface IMSettingDataSourceSectonItem()
 @property(copy, nonatomic) NSString* style;
 @end
 
 
-@implementation IMTableViewDataSourceCell
+@implementation IMSettingDataSourceSectonItem
 @dynamic style;
 
 - (IMTableViewCellStyle) cellStyle
@@ -26,7 +26,7 @@
 
 - (id)copyWithZone:(NSZone *)zone
 {
-    IMTableViewDataSourceCell* item = [[[self class] alloc] init];
+    IMSettingDataSourceSectonItem* item = [[[self class] alloc] init];
     [item setValuesForKeysWithDictionary:
                                         [self dictionaryWithValuesForKeys:[self allPropertyNames]]
 //                                                                         @[@keypath(self.key),

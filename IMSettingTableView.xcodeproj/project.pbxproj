@@ -15,6 +15,8 @@
 		F86FEFCA19D1574F00407542 /* IMPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFC819D1574F00407542 /* IMPlistReader.m */; };
 		F86FEFCF19D1694A00407542 /* NSObjectAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFCE19D1694A00407542 /* NSObjectAddition.m */; };
 		F86FEFD019D1694A00407542 /* NSObjectAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFCE19D1694A00407542 /* NSObjectAddition.m */; };
+		F89D292E19D261260048939C /* IMPasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D292D19D261260048939C /* IMPasswordTableViewCell.m */; };
+		F89D292F19D261260048939C /* IMPasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D292D19D261260048939C /* IMPasswordTableViewCell.m */; };
 		F8F2E85219CFBD2700DC8BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85119CFBD2700DC8BFD /* main.m */; };
 		F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85419CFBD2700DC8BFD /* AppDelegate.m */; };
 		F8F2E85819CFBD2700DC8BFD /* IMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85719CFBD2700DC8BFD /* IMRootViewController.m */; };
@@ -33,14 +35,14 @@
 		F8F2E9FB19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E9F919CFF9A900DC8BFD /* IMTableViewCell.m */; };
 		F8F2E9FF19CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */; };
 		F8F2EA0019CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */; };
-		F8F2EA0319CFFCF400DC8BFD /* IMTableViewDataSourceSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0219CFFCF400DC8BFD /* IMTableViewDataSourceSection.m */; };
-		F8F2EA0419CFFCF400DC8BFD /* IMTableViewDataSourceSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0219CFFCF400DC8BFD /* IMTableViewDataSourceSection.m */; };
-		F8F2EA0719CFFD1000DC8BFD /* IMTableViewDataSourceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0619CFFD1000DC8BFD /* IMTableViewDataSourceCell.m */; };
-		F8F2EA0819CFFD1000DC8BFD /* IMTableViewDataSourceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0619CFFD1000DC8BFD /* IMTableViewDataSourceCell.m */; };
-		F8F2EA0B19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0A19D0026F00DC8BFD /* IMTableViewDataSource.m */; };
-		F8F2EA0C19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0A19D0026F00DC8BFD /* IMTableViewDataSource.m */; };
-		F8F2EA0F19D00C5B00DC8BFD /* IMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0E19D00C5B00DC8BFD /* IMTableViewController.m */; };
-		F8F2EA1019D00C5B00DC8BFD /* IMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0E19D00C5B00DC8BFD /* IMTableViewController.m */; };
+		F8F2EA0319CFFCF400DC8BFD /* IMSettingDataSourceSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0219CFFCF400DC8BFD /* IMSettingDataSourceSection.m */; };
+		F8F2EA0419CFFCF400DC8BFD /* IMSettingDataSourceSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0219CFFCF400DC8BFD /* IMSettingDataSourceSection.m */; };
+		F8F2EA0719CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0619CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.m */; };
+		F8F2EA0819CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0619CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.m */; };
+		F8F2EA0B19D0026F00DC8BFD /* IMSettingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0A19D0026F00DC8BFD /* IMSettingDataSource.m */; };
+		F8F2EA0C19D0026F00DC8BFD /* IMSettingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0A19D0026F00DC8BFD /* IMSettingDataSource.m */; };
+		F8F2EA0F19D00C5B00DC8BFD /* IMSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0E19D00C5B00DC8BFD /* IMSettingTableViewController.m */; };
+		F8F2EA1019D00C5B00DC8BFD /* IMSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0E19D00C5B00DC8BFD /* IMSettingTableViewController.m */; };
 		F8F2EA1319D00DD200DC8BFD /* IMTableViewUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA1219D00DD200DC8BFD /* IMTableViewUtility.m */; };
 		F8F2EA1419D00DD200DC8BFD /* IMTableViewUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA1219D00DD200DC8BFD /* IMTableViewUtility.m */; };
 /* End PBXBuildFile section */
@@ -64,7 +66,10 @@
 		F86FEFCC19D1684700407542 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		F86FEFCD19D1694A00407542 /* NSObjectAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectAddition.h; sourceTree = "<group>"; };
 		F86FEFCE19D1694A00407542 /* NSObjectAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectAddition.m; sourceTree = "<group>"; };
-		F8F2E84C19CFBD2700DC8BFD /* IMTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89D292C19D261260048939C /* IMPasswordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPasswordTableViewCell.h; sourceTree = "<group>"; };
+		F89D292D19D261260048939C /* IMPasswordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPasswordTableViewCell.m; sourceTree = "<group>"; };
+		F89D293019D26A280048939C /* IMTableViewCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewCellProtocol.h; sourceTree = "<group>"; };
+		F8F2E84C19CFBD2700DC8BFD /* IMSettingTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMSettingTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F2E85019CFBD2700DC8BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F2E85119CFBD2700DC8BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8F2E85319CFBD2700DC8BFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,7 +79,7 @@
 		F8F2E85A19CFBD2700DC8BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8F2E85C19CFBD2700DC8BFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8F2E85F19CFBD2700DC8BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F8F2E86519CFBD2700DC8BFD /* IMTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F2E86519CFBD2700DC8BFD /* IMSettingTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMSettingTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F2E86A19CFBD2700DC8BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F2E86B19CFBD2700DC8BFD /* IMTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMTableViewTests.m; sourceTree = "<group>"; };
 		F8F2E87519CFBEDB00DC8BFD /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
@@ -89,14 +94,14 @@
 		F8F2E9F919CFF9A900DC8BFD /* IMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewCell.m; sourceTree = "<group>"; };
 		F8F2E9FD19CFFC5A00DC8BFD /* IMTableViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewConst.h; sourceTree = "<group>"; };
 		F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewConst.m; sourceTree = "<group>"; };
-		F8F2EA0119CFFCF400DC8BFD /* IMTableViewDataSourceSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewDataSourceSection.h; sourceTree = "<group>"; };
-		F8F2EA0219CFFCF400DC8BFD /* IMTableViewDataSourceSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewDataSourceSection.m; sourceTree = "<group>"; };
-		F8F2EA0519CFFD1000DC8BFD /* IMTableViewDataSourceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewDataSourceCell.h; sourceTree = "<group>"; };
-		F8F2EA0619CFFD1000DC8BFD /* IMTableViewDataSourceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewDataSourceCell.m; sourceTree = "<group>"; };
-		F8F2EA0919D0026F00DC8BFD /* IMTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewDataSource.h; sourceTree = "<group>"; };
-		F8F2EA0A19D0026F00DC8BFD /* IMTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewDataSource.m; sourceTree = "<group>"; };
-		F8F2EA0D19D00C5B00DC8BFD /* IMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewController.h; sourceTree = "<group>"; };
-		F8F2EA0E19D00C5B00DC8BFD /* IMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewController.m; sourceTree = "<group>"; };
+		F8F2EA0119CFFCF400DC8BFD /* IMSettingDataSourceSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSettingDataSourceSection.h; sourceTree = "<group>"; };
+		F8F2EA0219CFFCF400DC8BFD /* IMSettingDataSourceSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSettingDataSourceSection.m; sourceTree = "<group>"; };
+		F8F2EA0519CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSettingDataSourceSectonItem.h; sourceTree = "<group>"; };
+		F8F2EA0619CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSettingDataSourceSectonItem.m; sourceTree = "<group>"; };
+		F8F2EA0919D0026F00DC8BFD /* IMSettingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSettingDataSource.h; sourceTree = "<group>"; };
+		F8F2EA0A19D0026F00DC8BFD /* IMSettingDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSettingDataSource.m; sourceTree = "<group>"; };
+		F8F2EA0D19D00C5B00DC8BFD /* IMSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSettingTableViewController.h; sourceTree = "<group>"; };
+		F8F2EA0E19D00C5B00DC8BFD /* IMSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSettingTableViewController.m; sourceTree = "<group>"; };
 		F8F2EA1119D00DD200DC8BFD /* IMTableViewUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTableViewUtility.h; sourceTree = "<group>"; };
 		F8F2EA1219D00DD200DC8BFD /* IMTableViewUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTableViewUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,8 +138,8 @@
 		F8F2E84D19CFBD2700DC8BFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8F2E84C19CFBD2700DC8BFD /* IMTableView.app */,
-				F8F2E86519CFBD2700DC8BFD /* IMTableViewTests.xctest */,
+				F8F2E84C19CFBD2700DC8BFD /* IMSettingTableView.app */,
+				F8F2E86519CFBD2700DC8BFD /* IMSettingTableViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,8 +226,8 @@
 		F8F2E87B19CFC03200DC8BFD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F8F2EA0D19D00C5B00DC8BFD /* IMTableViewController.h */,
-				F8F2EA0E19D00C5B00DC8BFD /* IMTableViewController.m */,
+				F8F2EA0D19D00C5B00DC8BFD /* IMSettingTableViewController.h */,
+				F8F2EA0E19D00C5B00DC8BFD /* IMSettingTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -230,12 +235,12 @@
 		F8F2E87C19CFC03200DC8BFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F8F2EA0919D0026F00DC8BFD /* IMTableViewDataSource.h */,
-				F8F2EA0A19D0026F00DC8BFD /* IMTableViewDataSource.m */,
-				F8F2EA0119CFFCF400DC8BFD /* IMTableViewDataSourceSection.h */,
-				F8F2EA0219CFFCF400DC8BFD /* IMTableViewDataSourceSection.m */,
-				F8F2EA0519CFFD1000DC8BFD /* IMTableViewDataSourceCell.h */,
-				F8F2EA0619CFFD1000DC8BFD /* IMTableViewDataSourceCell.m */,
+				F8F2EA0919D0026F00DC8BFD /* IMSettingDataSource.h */,
+				F8F2EA0A19D0026F00DC8BFD /* IMSettingDataSource.m */,
+				F8F2EA0119CFFCF400DC8BFD /* IMSettingDataSourceSection.h */,
+				F8F2EA0219CFFCF400DC8BFD /* IMSettingDataSourceSection.m */,
+				F8F2EA0519CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.h */,
+				F8F2EA0619CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.m */,
 				F86FEFC719D1574F00407542 /* IMPlistReader.h */,
 				F86FEFC819D1574F00407542 /* IMPlistReader.m */,
 			);
@@ -253,6 +258,7 @@
 		F8F2E87E19CFC03200DC8BFD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				F89D293019D26A280048939C /* IMTableViewCellProtocol.h */,
 				F8F2E9F819CFF9A900DC8BFD /* IMTableViewCell.h */,
 				F8F2E9F919CFF9A900DC8BFD /* IMTableViewCell.m */,
 				F8F2E87F19CFC0A000DC8BFD /* IMTextfieldTableViewCell.h */,
@@ -261,6 +267,8 @@
 				F8F2E88419CFD1D100DC8BFD /* IMSwitchTableViewCell.m */,
 				F8F2E88719CFD30200DC8BFD /* IMButtonTableViewCell.h */,
 				F8F2E88819CFD30200DC8BFD /* IMButtonTableViewCell.m */,
+				F89D292C19D261260048939C /* IMPasswordTableViewCell.h */,
+				F89D292D19D261260048939C /* IMPasswordTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -268,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F8F2E84B19CFBD2700DC8BFD /* IMTableView */ = {
+		F8F2E84B19CFBD2700DC8BFD /* IMSettingTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8F2E86F19CFBD2700DC8BFD /* Build configuration list for PBXNativeTarget "IMTableView" */;
+			buildConfigurationList = F8F2E86F19CFBD2700DC8BFD /* Build configuration list for PBXNativeTarget "IMSettingTableView" */;
 			buildPhases = (
 				F8F2E84819CFBD2700DC8BFD /* Sources */,
 				F8F2E84919CFBD2700DC8BFD /* Frameworks */,
@@ -280,14 +288,14 @@
 			);
 			dependencies = (
 			);
-			name = IMTableView;
+			name = IMSettingTableView;
 			productName = IMTableView;
-			productReference = F8F2E84C19CFBD2700DC8BFD /* IMTableView.app */;
+			productReference = F8F2E84C19CFBD2700DC8BFD /* IMSettingTableView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F8F2E86419CFBD2700DC8BFD /* IMTableViewTests */ = {
+		F8F2E86419CFBD2700DC8BFD /* IMSettingTableViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8F2E87219CFBD2700DC8BFD /* Build configuration list for PBXNativeTarget "IMTableViewTests" */;
+			buildConfigurationList = F8F2E87219CFBD2700DC8BFD /* Build configuration list for PBXNativeTarget "IMSettingTableViewTests" */;
 			buildPhases = (
 				F8F2E86119CFBD2700DC8BFD /* Sources */,
 				F8F2E86219CFBD2700DC8BFD /* Frameworks */,
@@ -298,9 +306,9 @@
 			dependencies = (
 				F8F2E86719CFBD2700DC8BFD /* PBXTargetDependency */,
 			);
-			name = IMTableViewTests;
+			name = IMSettingTableViewTests;
 			productName = IMTableViewTests;
-			productReference = F8F2E86519CFBD2700DC8BFD /* IMTableViewTests.xctest */;
+			productReference = F8F2E86519CFBD2700DC8BFD /* IMSettingTableViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -321,7 +329,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F8F2E84719CFBD2700DC8BFD /* Build configuration list for PBXProject "IMTableView" */;
+			buildConfigurationList = F8F2E84719CFBD2700DC8BFD /* Build configuration list for PBXProject "IMSettingTableView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -334,8 +342,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8F2E84B19CFBD2700DC8BFD /* IMTableView */,
-				F8F2E86419CFBD2700DC8BFD /* IMTableViewTests */,
+				F8F2E84B19CFBD2700DC8BFD /* IMSettingTableView */,
+				F8F2E86419CFBD2700DC8BFD /* IMSettingTableViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -369,20 +377,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89D292E19D261260048939C /* IMPasswordTableViewCell.m in Sources */,
 				F8F2E85819CFBD2700DC8BFD /* IMRootViewController.m in Sources */,
 				F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */,
 				F8F2E85219CFBD2700DC8BFD /* main.m in Sources */,
 				F86FEFC919D1574F00407542 /* IMPlistReader.m in Sources */,
-				F8F2EA0F19D00C5B00DC8BFD /* IMTableViewController.m in Sources */,
+				F8F2EA0F19D00C5B00DC8BFD /* IMSettingTableViewController.m in Sources */,
 				F8F2E88919CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */,
-				F8F2EA0719CFFD1000DC8BFD /* IMTableViewDataSourceCell.m in Sources */,
+				F8F2EA0719CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.m in Sources */,
 				F8F2E88119CFC0A000DC8BFD /* IMTextfieldTableViewCell.m in Sources */,
 				F8F2E9FF19CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */,
 				F8F2E9FA19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */,
 				F8F2E88519CFD1D100DC8BFD /* IMSwitchTableViewCell.m in Sources */,
 				F8F2EA1319D00DD200DC8BFD /* IMTableViewUtility.m in Sources */,
-				F8F2EA0B19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */,
-				F8F2EA0319CFFCF400DC8BFD /* IMTableViewDataSourceSection.m in Sources */,
+				F8F2EA0B19D0026F00DC8BFD /* IMSettingDataSource.m in Sources */,
+				F8F2EA0319CFFCF400DC8BFD /* IMSettingDataSourceSection.m in Sources */,
 				F86FEFCF19D1694A00407542 /* NSObjectAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,14 +402,15 @@
 			files = (
 				F86FEFD019D1694A00407542 /* NSObjectAddition.m in Sources */,
 				F8F2E86C19CFBD2700DC8BFD /* IMTableViewTests.m in Sources */,
-				F8F2EA0C19D0026F00DC8BFD /* IMTableViewDataSource.m in Sources */,
+				F8F2EA0C19D0026F00DC8BFD /* IMSettingDataSource.m in Sources */,
 				F8F2EA1419D00DD200DC8BFD /* IMTableViewUtility.m in Sources */,
 				F8F2EA0019CFFC5A00DC8BFD /* IMTableViewConst.m in Sources */,
-				F8F2EA0419CFFCF400DC8BFD /* IMTableViewDataSourceSection.m in Sources */,
+				F8F2EA0419CFFCF400DC8BFD /* IMSettingDataSourceSection.m in Sources */,
+				F89D292F19D261260048939C /* IMPasswordTableViewCell.m in Sources */,
 				F8F2E88219CFC0A000DC8BFD /* IMTextfieldTableViewCell.m in Sources */,
-				F8F2EA0819CFFD1000DC8BFD /* IMTableViewDataSourceCell.m in Sources */,
+				F8F2EA0819CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.m in Sources */,
 				F8F2E88619CFD1D100DC8BFD /* IMSwitchTableViewCell.m in Sources */,
-				F8F2EA1019D00C5B00DC8BFD /* IMTableViewController.m in Sources */,
+				F8F2EA1019D00C5B00DC8BFD /* IMSettingTableViewController.m in Sources */,
 				F8F2E9FB19CFF9A900DC8BFD /* IMTableViewCell.m in Sources */,
 				F8F2E88A19CFD30200DC8BFD /* IMButtonTableViewCell.m in Sources */,
 				F86FEFCA19D1574F00407542 /* IMPlistReader.m in Sources */,
@@ -412,7 +422,7 @@
 /* Begin PBXTargetDependency section */
 		F8F2E86719CFBD2700DC8BFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F8F2E84B19CFBD2700DC8BFD /* IMTableView */;
+			target = F8F2E84B19CFBD2700DC8BFD /* IMSettingTableView */;
 			targetProxy = F8F2E86619CFBD2700DC8BFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -519,7 +529,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IMTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IMSettingTableView;
 			};
 			name = Debug;
 		};
@@ -529,7 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IMTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IMSettingTableView;
 			};
 			name = Release;
 		};
@@ -548,7 +558,7 @@
 				);
 				INFOPLIST_FILE = IMTableViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IMSettingTableViewTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMTableView.app/IMTableView";
 			};
 			name = Debug;
@@ -564,7 +574,7 @@
 				);
 				INFOPLIST_FILE = IMTableViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IMSettingTableViewTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMTableView.app/IMTableView";
 			};
 			name = Release;
@@ -572,7 +582,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F8F2E84719CFBD2700DC8BFD /* Build configuration list for PBXProject "IMTableView" */ = {
+		F8F2E84719CFBD2700DC8BFD /* Build configuration list for PBXProject "IMSettingTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8F2E86D19CFBD2700DC8BFD /* Debug */,
@@ -581,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8F2E86F19CFBD2700DC8BFD /* Build configuration list for PBXNativeTarget "IMTableView" */ = {
+		F8F2E86F19CFBD2700DC8BFD /* Build configuration list for PBXNativeTarget "IMSettingTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8F2E87019CFBD2700DC8BFD /* Debug */,
@@ -590,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8F2E87219CFBD2700DC8BFD /* Build configuration list for PBXNativeTarget "IMTableViewTests" */ = {
+		F8F2E87219CFBD2700DC8BFD /* Build configuration list for PBXNativeTarget "IMSettingTableViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8F2E87319CFBD2700DC8BFD /* Debug */,

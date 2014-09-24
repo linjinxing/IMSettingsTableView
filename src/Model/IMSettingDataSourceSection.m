@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 i-Move. All rights reserved.
 //
 
-#import "IMTableViewDataSourceSection.h"
-#import "IMTableViewDataSourceCell.h"
+#import "IMSettingDataSourceSection.h"
+#import "IMSettingDataSourceSectonItem.h"
 
-@implementation IMTableViewDataSourceSection
+@implementation IMSettingDataSourceSection
 - (id)copyWithZone:(NSZone *)zone
 {
-    IMTableViewDataSourceSection* sec = [[[self class] alloc] init];
+    IMSettingDataSourceSection* sec = [[[self class] alloc] init];
     sec.headerText = self.headerText;
     sec.footerText = self.footerText;
     sec.cells = self.cells;
@@ -21,13 +21,13 @@
 
 + (instancetype) tableViewDataSourceSectionWithCells:(NSArray*)dictCells headerText:(NSString*)htext footerText:(NSString*)fText
 {
-    IMTableViewDataSourceSection* s = [[[self class] alloc] init];
+    IMSettingDataSourceSection* s = [[[self class] alloc] init];
     s.headerText = htext;
     s.footerText = fText;
     
     NSMutableArray* a = [NSMutableArray arrayWithCapacity:[dictCells count]];
     for (NSDictionary* dict in dictCells) {
-        IMTableViewDataSourceCell* cell = [[IMTableViewDataSourceCell alloc] init];
+        IMSettingDataSourceSectonItem* cell = [[IMSettingDataSourceSectonItem alloc] init];
         [cell setValuesForKeysWithDictionary:dict];
         [a addObject:cell];
     }

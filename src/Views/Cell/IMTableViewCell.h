@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IMTableViewCellProtocol.h"
 
-@interface IMTableViewCell : UITableViewCell
+@class IMSettingDataSourceSectonItem;
+
+@interface IMTableViewCell : UITableViewCell<IMTableViewCell>
 
 @end
+

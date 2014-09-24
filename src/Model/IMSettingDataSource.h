@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class IMTableViewDataSourceCell;
+@class IMSettingDataSourceSectonItem;
 
-@interface IMTableViewDataSource : NSObject<NSCopying>
+@interface IMSettingDataSource : NSObject<NSCopying>
 
 @property(copy, nonatomic, readonly) NSString* title;
 @property(copy, nonatomic, readonly) NSString* headerText;
@@ -22,7 +22,7 @@
 - (NSUInteger)numberOfRowsInSection:(NSInteger)section;
 - (NSString*)headerTextForSection:(NSInteger)section;
 - (NSString*)footerTextForSection:(NSInteger)section;
-- (IMTableViewDataSourceCell*)itemAtIndexPath:(NSIndexPath*)indexPath;
+- (IMSettingDataSourceSectonItem*)itemAtIndexPath:(NSIndexPath*)indexPath;
 @end
 
 

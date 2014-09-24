@@ -34,11 +34,11 @@ IMTableViewCellStyle IMTableViewUtilityCellStyleFromString(NSString* text)
 
 UITableViewCellAccessoryType IMTableViewUtilityCellAccessoryTypeFromString(NSString* text)
 {
-    return [[@{IMTableViewCellAccessoryNone   : @(UITableViewCellAccessoryNone),
-               IMTableViewCellAccessoryDisclosureIndicator    : @(UITableViewCellAccessoryDisclosureIndicator),
-               IMTableViewCellAccessoryDetailDisclosureButton    : @(UITableViewCellAccessoryDetailDisclosureButton),
-               IMTableViewCellAccessoryCheckmark  : @(UITableViewCellAccessoryCheckmark),
-               IMTableViewCellAccessoryDetailButton : @(UITableViewCellAccessoryDetailButton),
+  return [[@{IMTableViewCellAccessoryNone     : @(UITableViewCellAccessoryNone),
+            IMTableViewCellAccessoryDisclosureIndicator    :   @(UITableViewCellAccessoryDisclosureIndicator),
+            IMTableViewCellAccessoryDetailDisclosureButton    : @(UITableViewCellAccessoryDetailDisclosureButton),
+            IMTableViewCellAccessoryCheckmark  : @(UITableViewCellAccessoryCheckmark),
+            IMTableViewCellAccessoryDetailButton : @(UITableViewCellAccessoryDetailButton),
 //               IMTableViewCellStyleSwitchString    : @(IMTableViewCellStyleSwitch),
 //               IMTableViewCellStyleButtonString    : @(IMTableViewCellStyleButton),
                }
@@ -59,6 +59,8 @@ NSString* IMTableViewUtilityCellReuseIdentifierFromStyle(IMTableViewCellStyle st
                }
              objectForKey:@(style)];
 }
+
+
 
 
 

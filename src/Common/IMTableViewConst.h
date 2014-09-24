@@ -18,7 +18,8 @@ typedef NS_ENUM(NSUInteger, IMTableViewCellStyle){
     IMTableViewCellStyleSubtitle = UITableViewCellStyleSubtitle,
     IMTableViewCellStyleTextfield,
     IMTableViewCellStyleSwitch,
-    IMTableViewCellStyleButton
+    IMTableViewCellStyleButton,
+    IMTableViewCellStylePassword
 };
 
 
