@@ -49,6 +49,7 @@ FOUNDATION_EXTERN NSString* const IMTableViewCellStyleSubtitleString  ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellStyleTextfieldString ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellStyleSwitchString    ;
 FOUNDATION_EXTERN NSString* const IMTableViewCellStyleButtonString    ;
+FOUNDATION_EXTERN NSString* const IMTableViewCellStylePasswordString;
 
 
 /* IMTableViewCell Reuse Identifier */

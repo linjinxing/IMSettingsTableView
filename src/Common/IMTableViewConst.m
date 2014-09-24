@@ -52,6 +52,7 @@ NSString* const IMTableViewCellStyleSubtitleString  = @"Subtitle";
 NSString* const IMTableViewCellStyleTextfieldString = @"Textfield";
 NSString* const IMTableViewCellStyleSwitchString    = @"Switch";
 NSString* const IMTableViewCellStyleButtonString    = @"Button";
+NSString* const IMTableViewCellStylePasswordString    = @"Password";
 
 
 /* IMTableViewCellReuseIdentifier */
