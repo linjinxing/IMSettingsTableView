@@ -1,24 +1,22 @@
 //
-//  IMTableViewTests.m
-//  IMTableViewTests
+//  IMSettingTableViewTests.m
+//  IMSettingTableViewTests
 //
-//  Created by LoveYouForever on 9/22/14.
+//  Created by LoveYouForever on 9/24/14.
 //  Copyright (c) 2014 i-Move. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-
-@interface IMTableViewTests : XCTestCase
+@interface IMSettingTableViewTests : XCTestCase
 
 @end
 
-@implementation IMTableViewTests
+@implementation IMSettingTableViewTests
 
 - (void)setUp {
     [super setUp];
-
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 

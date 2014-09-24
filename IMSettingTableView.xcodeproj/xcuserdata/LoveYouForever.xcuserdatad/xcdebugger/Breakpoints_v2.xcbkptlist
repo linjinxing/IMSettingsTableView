@@ -9,14 +9,72 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IMTableView/AppDelegate.m"
-            timestampString = "433245700.748403"
+            filePath = "IMSettingTableViewTests/IMSettingDataSourceTests.m"
+            timestampString = "433246960.474924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-testDataSource"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IMSettingDataSourceTests testDataSource]"
+                  moduleName = "IMSettingTableViewTests"
+                  urlString = "file:///Users/LoveYouForever/workspace/Git/IMTableView/IMSettingTableViewTests/IMSettingDataSourceTests.m"
+                  timestampString = "433247136.99978"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "473">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IMSettingDataSourceTests testDataSource]"
+                  moduleName = "IMSettingTableViewTests"
+                  urlString = "file:///Users/LoveYouForever/workspace/Git/IMTableView/IMSettingTableViewTests/IMSettingDataSourceTests.m"
+                  timestampString = "433247137.000096"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "2643">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IMSettingDataSourceTests testDataSource]"
+                  moduleName = "IMSettingTableViewTests"
+                  urlString = "file:///Users/LoveYouForever/workspace/Git/IMTableView/IMSettingTableViewTests/IMSettingDataSourceTests.m"
+                  timestampString = "433247137.000289"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "2771">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IMSettingDataSourceTests testDataSource]"
+                  moduleName = "IMSettingTableViewTests"
+                  urlString = "file:///Users/LoveYouForever/workspace/Git/IMTableView/IMSettingTableViewTests/IMSettingDataSourceTests.m"
+                  timestampString = "433247137.000482"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "3270">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

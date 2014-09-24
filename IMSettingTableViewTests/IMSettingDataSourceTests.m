@@ -36,10 +36,10 @@
 - (void)testDataSource {
     // This is an example of a functional test case.
     XCTAssertNotNil(self.ds);
-    XCTAssertEqualObjects(self.ds.title, @"titleTest");
-    XCTAssertEqualObjects(self.ds.headerText, @"headerTextTest");
-    XCTAssertEqualObjects(self.ds.footerText, @"footerTextTest");
-    XCTAssertTrue(self.ds.tableViewStyle == UITableViewStyleGrouped);
+    XCTAssertEqualObjects([self.ds title], @"titleTest");
+    XCTAssertEqualObjects([self.ds headerText], @"headerTextTest");
+    XCTAssertEqualObjects([self.ds footerText], @"footerTextTest");
+    XCTAssertTrue([self.ds tableViewStyle] == UITableViewStyleGrouped);
 }
 
 - (void)testDataSourceSection {
@@ -90,11 +90,6 @@
     XCTAssertTrue([self.ds numberOfRowsInSection:0] == 3);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
+
 
 @end
