@@ -9,6 +9,7 @@
 #import "IMSettingTableViewController.h"
 #import "IMSettingDataSource.h"
 #import "IMTableViewUtility.h"
+#import "IMSettingSaver.h"
 
 #import "IMTextfieldTableViewCell.h"
 #import "IMSwitchTableViewCell.h"
@@ -21,6 +22,7 @@
 #define ToNSValue(val) [NSValue valueWithPointer:&val]
 
 @interface IMSettingTableViewController()
+@property(strong, nonatomic) id<IMSettingSaver> saver;
 @end
 
 
@@ -33,7 +35,21 @@
     return tableViewCtrl;
 }
 
-
+- (void)initSaver
+{
+    NSMutableArray* keys = [NSMutableArray arrayWithCapacity:30];
+    for (int i = 0; i < [self.dataSrc numOfSections]; ++i) {
+        for (int j = 0; j < [self.dataSrc numberOfRowsInSection:i]; ++j) {
+            NSString* str = [[self.dataSrc itemAtIndexPath:
+                                                          [NSIndexPath indexPathForRow:j inSection:i]
+                              ] key];
+            if (str) {
+                [keys addObject:str];
+            }
+        }
+    }
+    self.saver = [IMSettingSaver settingSaverWithKeys:keys];
+}
 
 - (Class)registerCellClassWithStyle:(IMTableViewCellStyle)style
 {
@@ -46,10 +62,10 @@
                                                keyClass: [UITableViewCell class]};
     
     NSDictionary* dict = @{
-                           @(IMTableViewCellStyleDefault):  dictValueForSystemStyle,
-                           @(IMTableViewCellStyleValue1):   dictValueForSystemStyle,
-                           @(IMTableViewCellStyleValue2):   dictValueForSystemStyle,
-                           @(IMTableViewCellStyleSubtitle): dictValueForSystemStyle,
+                           @(IMTableViewCellStyleDefault)  :  dictValueForSystemStyle,
+                           @(IMTableViewCellStyleValue1)   :  dictValueForSystemStyle,
+                           @(IMTableViewCellStyleValue2)   :  dictValueForSystemStyle,
+                           @(IMTableViewCellStyleSubtitle) :  dictValueForSystemStyle,
 
                            @(IMTableViewCellStyleTextfield):
                                @{ keyToken: ToNSValue(onceTokenTextfield),
@@ -63,7 +79,7 @@
                                @{keyToken: ToNSValue(onceTokenButton),
                                  keyClass: [IMButtonTableViewCell class]},
                            
-                           @(IMTableViewCellStylePassword)   :
+                           @(IMTableViewCellStylePassword) :
                                @{keyToken: ToNSValue(onceTokenPassword),
                                  keyClass: [IMPasswordTableViewCell class]}
                            };
@@ -77,7 +93,45 @@
     return cls;
 }
 
-#pragma mark data source
+- (void)setupCell:(id)cell indexPath:(NSIndexPath*)indexPath
+{
+    id<IMSettingDataSourceSectonItem> dataSrcItem = [self.dataSrc itemAtIndexPath:indexPath];
+    if ([cell isKindOfClass:[IMTextfieldTableViewCell class]])
+    {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textOfTextFieldDidChange:) name:UITextFieldTextDidChangeNotification object:[cell textField]
+         ];
+    }else if ([cell isKindOfClass:[IMSwitchTableViewCell class]])
+    {
+        UISwitch* s = [cell uiswitch];
+        [s setOn:[self.saver boolForKey:[dataSrcItem key]]];
+        [s addTarget:self action:@selector(switchValueDidChange:) forControlEvents:UIControlEventValueChanged];
+    }else if ([cell isKindOfClass:[IMButtonTableViewCell class]])
+    {
+        [[cell button] addTarget:self action:@selector(buttonDidTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    }else if ([cell isKindOfClass:[IMPasswordTableViewCell class]])
+    {
+        
+    }else{
+        NSLog(@"cell:%@", cell);
+    }
+}
+#pragma mark -
+- (void)textOfTextFieldDidChange:(NSNotification*)noti
+{
+    
+}
+
+- (void)switchValueDidChange:(UISwitch*)sender
+{
+    
+}
+
+- (void)buttonDidTouchUpInside:(UIButton*)sender
+{
+    
+}
+
+#pragma mark - UITableView data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -103,6 +157,7 @@
         }else{
             cell = [[cls alloc] initWithStyle:style reuseIdentifier:identifier item:dataSrcItem];
         }
+        [self setupCell:cell indexPath:indexPath];
     }
     return cell;
 }
@@ -121,6 +176,7 @@
     return [self.dataSrc footerTextForSection:section];
 }
 
+#pragma mark - UITableView delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

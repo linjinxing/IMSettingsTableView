@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, IMTableViewCellStyle){
     IMTableViewCellStyleDefault = UITableViewCellStyleDefault,
@@ -49,6 +50,32 @@ typedef NS_ENUM(NSUInteger, IMTableViewCellStyle){
 
 @protocol IMTableViewCell <NSObject>
 - (instancetype)initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(id<IMSettingDataSourceSectonItem>)item;
+@end
+
+@protocol IMSettingSaver
++ (instancetype)settingSaverWithKeys:(NSArray*)keys;
+- (void)save;
+
+- (id)objectForKey:(NSString *)defaultName;
+- (void)setObject:(id)value forKey:(NSString *)defaultName;
+- (void)removeObjectForKey:(NSString *)defaultName;
+
+- (NSString *)stringForKey:(NSString *)defaultName;
+- (NSArray *)arrayForKey:(NSString *)defaultName;
+- (NSDictionary *)dictionaryForKey:(NSString *)defaultName;
+- (NSData *)dataForKey:(NSString *)defaultName;
+- (NSArray *)stringArrayForKey:(NSString *)defaultName;
+- (NSInteger)integerForKey:(NSString *)defaultName;
+- (float)floatForKey:(NSString *)defaultName;
+- (double)doubleForKey:(NSString *)defaultName;
+- (BOOL)boolForKey:(NSString *)defaultName;
+- (NSURL *)URLForKey:(NSString *)defaultName;
+
+- (void)setInteger:(NSInteger)value forKey:(NSString *)defaultName;
+- (void)setFloat:(float)value forKey:(NSString *)defaultName;
+- (void)setDouble:(double)value forKey:(NSString *)defaultName;
+- (void)setBool:(BOOL)value forKey:(NSString *)defaultName;
+- (void)setURL:(NSURL *)url forKey:(NSString *)defaultName;
 @end
 
 

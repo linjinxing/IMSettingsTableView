@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IMSettingProtocol.h"
 
-@interface IMSettingSaver : NSObject
-@property(strong, nonatomic) NSMutableDictionary* dict;
-+ (instancetype)settingSaverWithKeys:(NSArray*)keys;
-- (void)save;
+
+@interface IMSettingSaver : NSObject<IMSettingSaver>
+
 @end
 
 

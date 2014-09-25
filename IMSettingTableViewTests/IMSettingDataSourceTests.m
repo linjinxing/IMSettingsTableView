@@ -66,7 +66,7 @@
             if ([[item accessoryType] length]) {
                 XCTAssertEqualObjects([item accessoryType], ([accessoryTypes objectAtIndex:j]), "i:%d, j:%d", i, j);
             }
-            XCTAssertTrue([item cellStyle] == j, "[item cellStyle]:%u, i:%d, j:%d", [item cellStyle], i, j);
+            XCTAssertTrue([item cellStyle] == j, "[item cellStyle]:%lu, i:%d, j:%d", [item cellStyle], i, j);
         }
     }
 }

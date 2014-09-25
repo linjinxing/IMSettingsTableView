@@ -80,7 +80,6 @@
 		F8F2E85A19CFBD2700DC8BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8F2E85C19CFBD2700DC8BFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8F2E85F19CFBD2700DC8BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F8F2E87519CFBEDB00DC8BFD /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		F8F2E87F19CFC0A000DC8BFD /* IMTextfieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTextfieldTableViewCell.h; sourceTree = "<group>"; };
 		F8F2E88019CFC0A000DC8BFD /* IMTextfieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTextfieldTableViewCell.m; sourceTree = "<group>"; };
 		F8F2E88319CFD1D100DC8BFD /* IMSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSwitchTableViewCell.h; sourceTree = "<group>"; };
@@ -165,7 +164,6 @@
 			children = (
 				F8F2E85019CFBD2700DC8BFD /* Info.plist */,
 				F8F2E85119CFBD2700DC8BFD /* main.m */,
-				F8F2E87519CFBEDB00DC8BFD /* Podfile */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
