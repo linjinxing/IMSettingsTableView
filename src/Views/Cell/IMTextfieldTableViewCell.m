@@ -7,6 +7,7 @@
 //
 
 #import "IMTextfieldTableViewCell.h"
+#import "IMSettingDataSourceSectonItem.h"
 #import "IMTableViewConst.h"
 
 @interface IMTextfieldTableViewCell()
@@ -15,10 +16,16 @@
 
 @implementation IMTextfieldTableViewCell
 
-- (void)setupSubviews
+
+- (instancetype)initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(IMSettingDataSourceSectonItem*)item
 {
-    self.textField = [[UITextField alloc] init];
-    [self.contentView addSubview:self.textField];
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier item:item];
+    if (self) {
+        self.textField = [[UITextField alloc] init];
+        self.textField.placeholder = [item detailTitle];
+        [self.contentView addSubview:self.textField];
+    }
+    return self;
 }
 
 - (void)awakeFromNib {

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "IMTableViewCell.h"
 
-@interface IMSwitchTableViewCell : UITableViewCell
+@interface IMSwitchTableViewCell : IMTableViewCell
 @property(strong, nonatomic, readonly) UISwitch* uiswitch;
 @end

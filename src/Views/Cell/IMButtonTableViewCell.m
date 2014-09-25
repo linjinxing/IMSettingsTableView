@@ -7,6 +7,7 @@
 //
 
 #import "IMButtonTableViewCell.h"
+#import "IMSettingDataSourceSectonItem.h"
 
 @interface IMButtonTableViewCell()
 @property(strong, nonatomic) UIButton* button;
@@ -19,6 +20,19 @@
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.accessoryView = btn;
     self.button = btn;
+}
+
+
+- (instancetype)initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(IMSettingDataSourceSectonItem*)item
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier item:item];
+    if (self) {
+        UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btn setTitle:[item detailTitle] forState:UIControlStateNormal];
+        self.accessoryView = btn;
+        self.button = btn;
+    }
+    return self;
 }
 
 - (void)awakeFromNib {

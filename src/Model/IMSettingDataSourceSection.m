@@ -8,6 +8,7 @@
 
 #import "IMSettingDataSourceSection.h"
 #import "IMSettingDataSourceSectonItem.h"
+#import "IMSettingDataSource.h"
 
 @implementation IMSettingDataSourceSection
 - (id)copyWithZone:(NSZone *)zone
@@ -15,7 +16,7 @@
     IMSettingDataSourceSection* sec = [[[self class] alloc] init];
     sec.headerText = self.headerText;
     sec.footerText = self.footerText;
-    sec.cells = self.cells;
+    sec.items = self.items;
     return sec;
 }
 
@@ -29,9 +30,12 @@
     for (NSDictionary* dict in dictCells) {
         IMSettingDataSourceSectonItem* cell = [[IMSettingDataSourceSectonItem alloc] init];
         [cell setValuesForKeysWithDictionary:dict];
+        
+        cell.subDataSource = [IMSettingDataSource settingDataSourceWithDictionary:[dict valueForKey:IMTableViewCellDictionaryKeySubDataSource]];
+        
         [a addObject:cell];
     }
-    s.cells = a;
+    s.items = a;
     return s;
 }
 

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "IMTableViewCell.h"
 
-@interface IMButtonTableViewCell : UITableViewCell
+@interface IMButtonTableViewCell : IMTableViewCell
 @property(strong, nonatomic, readonly) UIButton* button;
 @end

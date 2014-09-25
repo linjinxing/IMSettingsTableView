@@ -13,6 +13,7 @@
 #import "IMTextfieldTableViewCell.h"
 #import "IMSwitchTableViewCell.h"
 #import "IMButtonTableViewCell.h"
+#import "IMPasswordTableViewCell.h"
 
 #import "IMSettingDataSourceSection.h"
 #import "IMSettingDataSourceSectonItem.h"
@@ -39,6 +40,7 @@
     static dispatch_once_t onceTokenTextfield;
     static dispatch_once_t onceTokenSwitch;
     static dispatch_once_t onceTokenButton;
+    static dispatch_once_t onceTokenPassword;
     
     NSString* keyToken = @"token";
     NSString* keyClass = @"class";
@@ -62,7 +64,11 @@
                            
                            @(IMTableViewCellStyleButton)   :
                                @{keyToken: ToNSValue(onceTokenButton),
-                                 keyClass: [IMButtonTableViewCell class]}
+                                 keyClass: [IMButtonTableViewCell class]},
+                           
+                           @(IMTableViewCellStylePassword)   :
+                               @{keyToken: ToNSValue(onceTokenPassword),
+                                 keyClass: [IMPasswordTableViewCell class]}
                            };
     
     Class cls = [[dict objectForKey:@(style)] objectForKey:keyClass];

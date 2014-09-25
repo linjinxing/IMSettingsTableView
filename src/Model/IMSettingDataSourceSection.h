@@ -11,7 +11,7 @@
 @interface IMSettingDataSourceSection : NSObject<NSCopying>
 @property(copy, nonatomic) NSString* headerText;
 @property(copy, nonatomic) NSString* footerText;
-@property(copy, nonatomic) NSArray* cells;
+@property(copy, nonatomic) NSArray* items;
 
 + (instancetype) tableViewDataSourceSectionWithCells:(NSArray*)dictCells;
 + (instancetype) tableViewDataSourceSectionWithCells:(NSArray*)dictCells headerText:(NSString*)htext footerText:(NSString*)fText;

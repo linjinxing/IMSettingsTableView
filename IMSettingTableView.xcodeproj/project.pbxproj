@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F838DE2C19D3B04D008F3986 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8F63EF419D2D18000B47B87 /* test.plist */; };
 		F86FEFC219D113E100407542 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86FEFC119D113E100407542 /* Setting.plist */; };
 		F86FEFC519D11AC800407542 /* NewUserGroup.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86FEFC419D11AC800407542 /* NewUserGroup.plist */; };
 		F86FEFC919D1574F00407542 /* IMPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFC819D1574F00407542 /* IMPlistReader.m */; };
@@ -347,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F838DE2C19D3B04D008F3986 /* test.plist in Resources */,
 				F8F63EE319D2D10000B47B87 /* Main.storyboard in Resources */,
 				F8F63EE419D2D10100B47B87 /* LaunchScreen.xib in Resources */,
 				F86FEFC219D113E100407542 /* Setting.plist in Resources */,
@@ -604,6 +606,7 @@
 				F8F63EF319D2D11D00B47B87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -5,7 +5,7 @@
 	<key>headerText</key>
 	<string>headerTextTest</string>
 	<key>footerText</key>
-	<string>footerTextText</string>
+	<string>footerTextTest</string>
 	<key>title</key>
 	<string>titleTest</string>
 	<key>style</key>
@@ -21,10 +21,10 @@
 					<key>imageName</key>
 					<string>image0</string>
 					<key>textTitle</key>
-					<string>s0i0title</string>
+					<string>s0i0textTitle</string>
 					<key>detailTitle</key>
 					<string>s0i0detailTitle</string>
-					<key>cellStyle</key>
+					<key>style</key>
 					<string>Default</string>
 				</dict>
 				<dict>
@@ -33,10 +33,10 @@
 					<key>imageName</key>
 					<string>image1</string>
 					<key>textTitle</key>
-					<string>s0i1title</string>
+					<string>s0i1textTitle</string>
 					<key>detailTitle</key>
 					<string>s0i1detailTitle</string>
-					<key>cellStyle</key>
+					<key>style</key>
 					<string>Value1</string>
 					<key>accessoryType</key>
 					<string>DisclosureIndicator</string>
@@ -60,7 +60,7 @@
 										<string>section0item0subdatasourceTitlesection0item0Title</string>
 										<key>detailTitle</key>
 										<string>section0item0subdatasourceTitlesection0item0DetailTitle</string>
-										<key>cellStyle</key>
+										<key>style</key>
 										<string>Value1</string>
 									</dict>
 									<dict>
@@ -72,7 +72,7 @@
 										<string>detailTitle</string>
 										<key>defaultValue</key>
 										<string>defaultValue</string>
-										<key>cellStyle</key>
+										<key>style</key>
 										<string>Default</string>
 									</dict>
 									<dict>
@@ -86,7 +86,7 @@
 										<string>4</string>
 										<key>defaultValue</key>
 										<string>5</string>
-										<key>cellStyle</key>
+										<key>style</key>
 										<string>Default</string>
 									</dict>
 								</array>
@@ -100,10 +100,10 @@
 					<key>imageName</key>
 					<string>image2</string>
 					<key>textTitle</key>
-					<string>s0i2title</string>
+					<string>s0i2textTitle</string>
 					<key>detailTitle</key>
 					<string>s0i2detailTitle</string>
-					<key>cellStyle</key>
+					<key>style</key>
 					<string>Value2</string>
 					<key>accessoryType</key>
 					<string>DetailDisclosureButton</string>
@@ -114,10 +114,10 @@
 					<key>imageName</key>
 					<string>image3</string>
 					<key>textTitle</key>
-					<string>s0i3Title</string>
+					<string>s0i3textTitle</string>
 					<key>detailTitle</key>
 					<string>s0i3detailTitle</string>
-					<key>cellStyle</key>
+					<key>style</key>
 					<string>Subtitle</string>
 					<key>accessoryType</key>
 					<string>Checkmark</string>
@@ -133,7 +133,7 @@
 					<string>s0i4detailTitle</string>
 					<key>defaultValue</key>
 					<string>s0i4DefaultValue</string>
-					<key>cellStyle</key>
+					<key>style</key>
 					<string>Textfield</string>
 				</dict>
 				<dict>
@@ -147,31 +147,31 @@
 					<string>s0i5detailTitle</string>
 					<key>defaultValue</key>
 					<string>Yes</string>
-					<key>cellStyle</key>
+					<key>style</key>
 					<string>Switch</string>
 				</dict>
 				<dict>
 					<key>key</key>
 					<string>s0i6key</string>
 					<key>imageName</key>
-					<string>image0</string>
+					<string>image6</string>
 					<key>textTitle</key>
 					<string>s0i6textTitle</string>
 					<key>detailTitle</key>
-					<string>item6buttonlTitle</string>
-					<key>cellStyle</key>
+					<string>s0i6detailTitle</string>
+					<key>style</key>
 					<string>Button</string>
 				</dict>
 				<dict>
 					<key>key</key>
 					<string>s0i7key</string>
 					<key>imageName</key>
-					<string>image0</string>
+					<string>image7</string>
 					<key>textTitle</key>
 					<string>s0i7textTitle</string>
 					<key>detailTitle</key>
 					<string>s0i7detailTitle</string>
-					<key>cellStyle</key>
+					<key>style</key>
 					<string>Password</string>
 				</dict>
 			</array>
@@ -185,39 +185,39 @@
 			<array>
 				<dict>
 					<key>key</key>
-					<string>s1i0key0</string>
+					<string>s1i0key</string>
 					<key>imageName</key>
 					<string>image0</string>
 					<key>textTitle</key>
 					<string>s1i0textTitle</string>
 					<key>detailTitle</key>
 					<string>s1i0detailTitle</string>
-					<key>cellStyle</key>
+					<key>style</key>
 					<string>Default</string>
 				</dict>
 				<dict>
 					<key>key</key>
-					<string>s0i6key</string>
+					<string>s1i1key</string>
 					<key>imageName</key>
-					<string>image0</string>
+					<string>image1</string>
 					<key>textTitle</key>
-					<string>s0i6textTitle</string>
+					<string>s1i1textTitle</string>
 					<key>detailTitle</key>
-					<string>item6buttonlTitle</string>
-					<key>cellStyle</key>
-					<string>Button</string>
+					<string>s1i1detailTitle</string>
+					<key>style</key>
+					<string>Value1</string>
 				</dict>
 				<dict>
 					<key>key</key>
-					<string>s0i6key</string>
+					<string>s1i2key</string>
 					<key>imageName</key>
-					<string>image0</string>
+					<string>image2</string>
 					<key>textTitle</key>
-					<string>s0i6textTitle</string>
+					<string>s1i2textTitle</string>
 					<key>detailTitle</key>
-					<string>item6buttonlTitle</string>
-					<key>cellStyle</key>
-					<string>Button</string>
+					<string>s1i2detailTitle</string>
+					<key>style</key>
+					<string>Value2</string>
 				</dict>
 			</array>
 		</dict>

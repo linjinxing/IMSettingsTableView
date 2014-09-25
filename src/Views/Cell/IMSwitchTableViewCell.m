@@ -7,6 +7,7 @@
 //
 
 #import "IMSwitchTableViewCell.h"
+#import "IMSettingDataSourceSectonItem.h"
 
 @interface IMSwitchTableViewCell()
 @property(strong, nonatomic) UISwitch* uiswitch;
@@ -14,11 +15,16 @@
 
 @implementation IMSwitchTableViewCell
 
-- (void)setupSubviews
+- (instancetype)initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(IMSettingDataSourceSectonItem*)item
 {
-    UISwitch* s = [[UISwitch alloc] init];
-    self.accessoryView = s;
-    self.uiswitch = s;
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier item:item];
+    if (self) {
+        UISwitch* s = [[UISwitch alloc] init];
+        self.accessoryView = s;
+        s.on = [item defaultValue];
+        self.uiswitch = s;
+    }
+    return self;
 }
 
 - (void)awakeFromNib {

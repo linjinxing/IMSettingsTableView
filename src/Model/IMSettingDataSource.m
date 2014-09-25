@@ -24,20 +24,21 @@
 @implementation IMSettingDataSource
 @dynamic numOfSections;
 
-+ (instancetype)settingDataSourceWithDictionary:(NSDictionary*)dict
++ (instancetype)settingDataSourceWithDictionary:(NSDictionary*)aDict
 {
     IMSettingDataSource* ds = [[[self class] alloc] init];
-    ds.tvStyle = [dict valueForKey:IMTableViewDictionaryKeyStyle];
-    ds.title = [dict valueForKey:IMTableViewDictionaryKeyTitle];
-    ds.headerText = [dict valueForKey:IMTableViewDictionaryKeyHeaderText];
-    ds.footerText = [dict valueForKey:IMTableViewDictionaryKeyFooterText];
+    ds.tvStyle = [aDict valueForKey:IMTableViewDictionaryKeyStyle];
+    ds.title = [aDict valueForKey:IMTableViewDictionaryKeyTitle];
+    ds.headerText = [aDict valueForKey:IMTableViewDictionaryKeyHeaderText];
+    ds.footerText = [aDict valueForKey:IMTableViewDictionaryKeyFooterText];
     
-    NSArray* strSections = [dict valueForKey:IMTableViewDictionaryKeySections];
+    NSArray* strSections = [aDict valueForKey:IMTableViewDictionaryKeySections];
     NSMutableArray* a = [NSMutableArray arrayWithCapacity:[strSections count]];
     for (NSDictionary* dict in strSections){
         IMSettingDataSourceSection* s = [IMSettingDataSourceSection tableViewDataSourceSectionWithCells:[dict valueForKey:IMTableViewSectionDictionaryKeyCells] headerText:[dict valueForKey:IMTableViewSectionDictionaryKeyHeaderText] footerText:[dict valueForKey:IMTableViewSectionDictionaryKeyFooterText]];
         if (s) [a addObject:s];
     }
+    ds.sections = [a copy];
     return ds;
 }
 

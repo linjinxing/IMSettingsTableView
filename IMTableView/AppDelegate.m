@@ -22,7 +22,7 @@
     // Override point for customization after application launch.
     IMSettingTableViewController* stv = (IMSettingTableViewController*)[(UINavigationController*)[self.window rootViewController] topViewController];
     stv.dataSrc = [IMSettingDataSource settingDataSourceWithDictionary:[[IMPlistReader plistReaderWithPath:[[NSBundle mainBundle] pathForResource:@"test"
-                                                                                                                                           ofType:@"plst"]] result]];
+                                                                                                                                           ofType:@"plist"]] result]];
     return YES;
 }
 

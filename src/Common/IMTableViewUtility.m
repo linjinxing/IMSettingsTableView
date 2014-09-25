@@ -27,6 +27,7 @@ IMTableViewCellStyle IMTableViewUtilityCellStyleFromString(NSString* text)
                IMTableViewCellStyleTextfieldString : @(IMTableViewCellStyleTextfield),
                IMTableViewCellStyleSwitchString    : @(IMTableViewCellStyleSwitch),
                IMTableViewCellStyleButtonString    : @(IMTableViewCellStyleButton),
+               IMTableViewCellStylePasswordString    : @(IMTableViewCellStylePassword),
                }
              valueForKey:text]
                 integerValue];
