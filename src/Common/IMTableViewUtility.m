@@ -56,7 +56,8 @@ NSString* IMTableViewUtilityCellReuseIdentifierFromStyle(IMTableViewCellStyle st
                 @(IMTableViewCellStyleSubtitle)  : IMTableViewCellReuseIdentifierStyleSubtitle,
                 @(IMTableViewCellStyleTextfield) : IMTableViewCellReuseIdentifierStyleTextfield ,
                 @(IMTableViewCellStyleSwitch)    : IMTableViewCellReuseIdentifierStyleSwitch,
-                @(IMTableViewCellStyleButton)    : IMTableViewCellReuseIdentifierStyleButton
+                @(IMTableViewCellStyleButton)    : IMTableViewCellReuseIdentifierStyleButton,
+                @(IMTableViewCellStylePassword)    : IMTableViewCellReuseIdentifierStylePassword
                }
              objectForKey:@(style)];
 }

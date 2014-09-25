@@ -63,6 +63,7 @@ NSString* const IMTableViewCellReuseIdentifierStyleSubtitle  = @"IMTableViewCell
 NSString* const IMTableViewCellReuseIdentifierStyleTextfield = @"IMTableViewCellReuseIdentifierTextfield" ;
 NSString* const IMTableViewCellReuseIdentifierStyleSwitch    = @"IMTableViewCellReuseIdentifierSwitch" ;
 NSString* const IMTableViewCellReuseIdentifierStyleButton    = @"IMTableViewCellReuseIdentifierButton" ;
+NSString* const IMTableViewCellReuseIdentifierStylePassword    = @"IMTableViewCellReuseIdentifierPassword" ;
 
 /* IMTableViewCell Accessory type */
 NSString* const IMTableViewCellAccessoryNone                   = @"None";

@@ -33,12 +33,12 @@
     ds.footerText = [aDict valueForKey:IMTableViewDictionaryKeyFooterText];
     
     NSArray* strSections = [aDict valueForKey:IMTableViewDictionaryKeySections];
-    NSMutableArray* a = [NSMutableArray arrayWithCapacity:[strSections count]];
+    NSMutableArray* sections = [NSMutableArray arrayWithCapacity:[strSections count]];
     for (NSDictionary* dict in strSections){
         IMSettingDataSourceSection* s = [IMSettingDataSourceSection tableViewDataSourceSectionWithCells:[dict valueForKey:IMTableViewSectionDictionaryKeyCells] headerText:[dict valueForKey:IMTableViewSectionDictionaryKeyHeaderText] footerText:[dict valueForKey:IMTableViewSectionDictionaryKeyFooterText]];
-        if (s) [a addObject:s];
+        if (s) [sections addObject:s];
     }
-    ds.sections = [a copy];
+    if ([sections count]) ds.sections = [sections copy];
     return ds;
 }
 

@@ -15,21 +15,14 @@
 
 @implementation IMButtonTableViewCell
 
-- (void)setupSubviews
-{
-    UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.accessoryView = btn;
-    self.button = btn;
-}
-
 
 - (instancetype)initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(IMSettingDataSourceSectonItem*)item
 {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier item:item];
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     if (self) {
-        UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btn setTitle:[item detailTitle] forState:UIControlStateNormal];
-        self.accessoryView = btn;
+        UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [btn setTitle:[item textTitle] forState:UIControlStateNormal];
+        [self.contentView addSubview:btn];
         self.button = btn;
     }
     return self;
@@ -48,8 +41,10 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    self.button.layer.borderColor = [UIColor blueColor].CGColor;
+    self.button.layer.borderWidth = 1.0;
     CGRect frame = self.contentView.frame;
-    self.button.frame = frame;
+    self.button.frame = CGRectInset(frame, IMTableViewControlSpace * 2, .0f) ;
 }
 
 @end

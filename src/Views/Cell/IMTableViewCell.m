@@ -11,21 +11,12 @@
 
 @implementation IMTableViewCell
 
-- (void)setupSubviews
-{
-    NSLog(@"subclass implement this medthod");
-}
-
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    return [self initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:reuseIdentifier item:nil];
-}
 
 - (instancetype)initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(IMSettingDataSourceSectonItem*)item
 {
-    self = [super initWithStyle:(UITableViewCellStyle)style reuseIdentifier:reuseIdentifier];
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     if (self) {
-        [self setupSubviews];
+        self.textLabel.text = [item textTitle];
     }
     return self;
 }

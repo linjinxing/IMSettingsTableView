@@ -23,6 +23,7 @@
 @interface IMSettingTableViewController()
 @end
 
+
 @implementation IMSettingTableViewController
 
 + (instancetype)tableViewControllerWithDataSource:(id<IMSettingDataSource>)dataSrc
@@ -36,11 +37,7 @@
 
 - (Class)registerCellClassWithStyle:(IMTableViewCellStyle)style
 {
-    static dispatch_once_t onceTokenSystem;
-    static dispatch_once_t onceTokenTextfield;
-    static dispatch_once_t onceTokenSwitch;
-    static dispatch_once_t onceTokenButton;
-    static dispatch_once_t onceTokenPassword;
+    static dispatch_once_t onceTokenSystem, onceTokenTextfield, onceTokenSwitch, onceTokenButton,onceTokenPassword;
     
     NSString* keyToken = @"token";
     NSString* keyClass = @"class";
@@ -92,6 +89,7 @@
     id<IMSettingDataSourceSectonItem> dataSrcItem = [self.dataSrc itemAtIndexPath:indexPath];
     IMTableViewCellStyle style = dataSrcItem.cellStyle;
     NSString* identifier = IMTableViewUtilityCellReuseIdentifierFromStyle(style);
+    NSAssert(nil != identifier, @"");
     UITableViewCell* cell = nil;
     Class cls = [self registerCellClassWithStyle:style];
     cell = [tableView dequeueReusableCellWithIdentifier:identifier];
@@ -101,12 +99,9 @@
             if ([dataSrcItem.accessoryType length]) {
                 cell.accessoryType = IMTableViewUtilityCellAccessoryTypeFromString(dataSrcItem.accessoryType);
             }
+            cell.textLabel.text = dataSrcItem.textTitle;
         }else{
             cell = [[cls alloc] initWithStyle:style reuseIdentifier:identifier item:dataSrcItem];
-        }
-        
-        if ([dataSrcItem.textTitle length]) {
-            cell.textLabel.text = dataSrcItem.textTitle;
         }
     }
     return cell;
@@ -126,6 +121,14 @@
     return [self.dataSrc footerTextForSection:section];
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    id<IMSettingDataSourceSectonItem> dataSrcItem = [self.dataSrc itemAtIndexPath:indexPath];
+    if ([dataSrcItem subDataSource]) {
+        [self.navigationController pushViewController:[[self class] tableViewControllerWithDataSource:[dataSrcItem subDataSource]] animated:YES];
+    }
+}
 
 @end
 

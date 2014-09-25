@@ -31,7 +31,9 @@
         IMSettingDataSourceSectonItem* cell = [[IMSettingDataSourceSectonItem alloc] init];
         [cell setValuesForKeysWithDictionary:dict];
         
-        cell.subDataSource = [IMSettingDataSource settingDataSourceWithDictionary:[dict valueForKey:IMTableViewCellDictionaryKeySubDataSource]];
+        if ([dict valueForKey:IMTableViewCellDictionaryKeySubDataSource]) {
+            cell.subDataSource = [IMSettingDataSource settingDataSourceWithDictionary:[dict valueForKey:IMTableViewCellDictionaryKeySubDataSource]];
+        }
         
         [a addObject:cell];
     }

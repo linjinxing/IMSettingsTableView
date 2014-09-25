@@ -41,10 +41,16 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    CGRect frame = self.contentView.frame;
+    
+    CGRect frame = self.contentView.bounds;
     if ([self.textLabel.text length]) {
-        frame.origin.x = self.textLabel.frame.size.width + IMTableViewControlSpace;
-        frame.size.width -= (self.textLabel.frame.size.width + IMTableViewControlSpace * 2);
+        CGSize size = [self.textLabel.text sizeWithAttributes:@{NSFontAttributeName:self.textLabel.font}];
+        CGRect textFrame = self.textLabel.frame;
+        textFrame.size.width = size.width + IMTableViewControlSpace * 2;
+        self.textLabel.frame = textFrame;
+        
+        frame.origin.x = self.textLabel.frame.size.width + IMTableViewControlSpace * 2;
+        frame.size.width -= (self.textLabel.frame.size.width + IMTableViewControlSpace * 4);
     }
     self.textField.frame = frame;
 }

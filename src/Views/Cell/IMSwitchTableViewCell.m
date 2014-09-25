@@ -21,7 +21,7 @@
     if (self) {
         UISwitch* s = [[UISwitch alloc] init];
         self.accessoryView = s;
-        s.on = [item defaultValue];
+        s.on = [[item defaultValue] boolValue];
         self.uiswitch = s;
     }
     return self;
@@ -35,6 +35,12 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    NSLog(@"layoutSubviews");
 }
 
 @end
