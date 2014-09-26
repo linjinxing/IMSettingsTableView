@@ -21,6 +21,8 @@
 
 #define ToNSValue(val) [NSValue valueWithPointer:&val]
 
+static NSMutableDictionary* s_dictClass = nil;
+
 @interface IMSettingTableViewController()<UITextFieldDelegate>
 @property(strong, nonatomic) id<IMSettingSaver> saver;
 @end
@@ -209,8 +211,24 @@
 {
     id<IMSettingDataSourceSectonItem> dataSrcItem = [self.dataSrc itemAtIndexPath:indexPath];
     if ([dataSrcItem subDataSource]) {
-        [self.navigationController pushViewController:[[self class] tableViewControllerWithDataSource:[dataSrcItem subDataSource]] animated:YES];
+        Class cls = [s_dictClass objectForKey:[dataSrcItem key]];
+        if (nil == cls) {
+            cls = [self class];
+        }
+        NSAssert(cls == [self class] || [cls isSubclassOfClass:[self class]], @"should be an IMSettingTableViewController class or subclass of it");
+        [self.navigationController pushViewController:[cls tableViewControllerWithDataSource:[dataSrcItem subDataSource]] animated:YES];
     }
+}
+
+#pragma mark -
+
++ (void)registerViewControllerClass:(Class)cls forKey:(NSString*)key
+{
+    static dispatch_once_t token;
+    dispatch_once(&token, ^{
+        s_dictClass = [NSMutableDictionary dictionaryWithCapacity:30];
+    });
+    [s_dictClass setObject:cls forKey:key];
 }
 
 @end

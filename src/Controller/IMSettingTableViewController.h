@@ -15,6 +15,11 @@
 @property(strong, nonatomic) id<IMSettingDataSource> dataSrc;
 + (instancetype)tableViewControllerWithDataSource:(id<IMSettingDataSource>)dataSrc;
 
+/* custom subclass of IMSettingTableViewController should register class
+ before user tap the cell to enter next IMSettingTableViewController
+ */
++ (void)registerViewControllerClass:(Class)cls forKey:(NSString*)key;
+
 /* overwrite the following methods to handle event */
 
 /* called when any value did change
