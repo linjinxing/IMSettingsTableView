@@ -37,6 +37,7 @@
 		F838DE2C19D3B04D008F3986 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8F63EF419D2D18000B47B87 /* test.plist */; };
 		F86FEFC219D113E100407542 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86FEFC119D113E100407542 /* Setting.plist */; };
 		F86FEFC519D11AC800407542 /* NewUserGroup.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86FEFC419D11AC800407542 /* NewUserGroup.plist */; };
+		F8D0E8AA19D5BABB00CD1ADD /* IMSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F815052319D50FFB002ED591 /* IMSettingTableViewController.m */; };
 		F8F2E85219CFBD2700DC8BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85119CFBD2700DC8BFD /* main.m */; };
 		F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85419CFBD2700DC8BFD /* AppDelegate.m */; };
 		F8F2E85D19CFBD2700DC8BFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F2E85C19CFBD2700DC8BFD /* Images.xcassets */; };
@@ -443,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D0E8AA19D5BABB00CD1ADD /* IMSettingTableViewController.m in Sources */,
 				F8F2E85519CFBD2700DC8BFD /* AppDelegate.m in Sources */,
 				F8F2E85219CFBD2700DC8BFD /* main.m in Sources */,
 			);
@@ -668,6 +670,7 @@
 				F81504D419D50D83002ED591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8F2E84719CFBD2700DC8BFD /* Build configuration list for PBXProject "IMSettingTableView" */ = {
 			isa = XCConfigurationList;
