@@ -10,5 +10,5 @@
 #import "IMTableViewCell.h"
 
 @interface IMSwitchTableViewCell : IMTableViewCell
-@property(strong, nonatomic, readonly) UISwitch* uiswitch;
+@property(strong, nonatomic, readonly) UISwitch* swi;
 @end

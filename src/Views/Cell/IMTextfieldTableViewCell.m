@@ -15,7 +15,10 @@
 @end
 
 @implementation IMTextfieldTableViewCell
-
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 - (instancetype)initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(IMSettingDataSourceSectonItem*)item
 {
@@ -24,8 +27,15 @@
         self.textField = [[UITextField alloc] init];
         self.textField.placeholder = [item detailTitle];
         [self.contentView addSubview:self.textField];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textOfTextFieldDidChange:) name:UITextFieldTextDidChangeNotification object:self.textField];
     }
     return self;
+}
+
+- (void)textOfTextFieldDidChange:(NSNotification*)noti
+{
+    if (self.actionHandler)
+        self.actionHandler(self, self.textField.text, UIControlEventValueChanged);
 }
 
 - (void)awakeFromNib {

@@ -10,7 +10,7 @@
 #import "IMSettingDataSourceSectonItem.h"
 
 @interface IMSwitchTableViewCell()
-@property(strong, nonatomic) UISwitch* uiswitch;
+@property(strong, nonatomic) UISwitch* swi;
 @end
 
 @implementation IMSwitchTableViewCell
@@ -22,10 +22,20 @@
         UISwitch* s = [[UISwitch alloc] init];
         self.accessoryView = s;
         s.on = [[item defaultValue] boolValue];
-        self.uiswitch = s;
+        [s addTarget:self action:@selector(switchValueDidChange:) forControlEvents:UIControlEventValueChanged];
+        self.swi = s;
     }
     return self;
 }
+
+
+- (void)switchValueDidChange:(UISwitch*)sender
+{
+    if (self.actionHandler) {
+        self.actionHandler(self, @(self.swi.on), UIControlEventValueChanged);
+    }
+}
+
 
 - (void)awakeFromNib {
     // Initialization code

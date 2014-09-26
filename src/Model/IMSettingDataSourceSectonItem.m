@@ -8,7 +8,6 @@
 
 #import "IMSettingDataSourceSectonItem.h"
 #import "IMTableViewUtility.h"
-#import "NSObjectAddition.h"
 #import "keypath.h"
 
 @interface IMSettingDataSourceSectonItem()

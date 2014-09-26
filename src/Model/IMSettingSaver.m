@@ -20,10 +20,15 @@
     NSMutableDictionary* dictTmp = [NSMutableDictionary dictionaryWithCapacity:[keys count]];
     for (NSString* key in keys) {
         NSObject* obj = [[NSUserDefaults standardUserDefaults] objectForKey:key];
-        [dictTmp setObject:obj forKey:key];
+        if (obj) [dictTmp setObject:obj forKey:key];
     }
     ss.dict = dictTmp;
     return ss;
+}
+
+- (NSDictionary*)valuesAndKeys
+{
+    return [self.dict copy];
 }
 
 - (void)save

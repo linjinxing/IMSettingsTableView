@@ -11,7 +11,6 @@
 		F86FEFC219D113E100407542 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86FEFC119D113E100407542 /* Setting.plist */; };
 		F86FEFC519D11AC800407542 /* NewUserGroup.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86FEFC419D11AC800407542 /* NewUserGroup.plist */; };
 		F86FEFC919D1574F00407542 /* IMPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFC819D1574F00407542 /* IMPlistReader.m */; };
-		F86FEFCF19D1694A00407542 /* NSObjectAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFCE19D1694A00407542 /* NSObjectAddition.m */; };
 		F89D292E19D261260048939C /* IMPasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D292D19D261260048939C /* IMPasswordTableViewCell.m */; };
 		F89D293319D2965B0048939C /* IMSettingSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D293219D2965B0048939C /* IMSettingSaver.m */; };
 		F8F2E85219CFBD2700DC8BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2E85119CFBD2700DC8BFD /* main.m */; };
@@ -37,7 +36,6 @@
 		F8F63EFA19D2D1BC00B47B87 /* IMSettingDataSourceSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0219CFFCF400DC8BFD /* IMSettingDataSourceSection.m */; };
 		F8F63EFB19D2D1BC00B47B87 /* IMSettingDataSourceSectonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0619CFFD1000DC8BFD /* IMSettingDataSourceSectonItem.m */; };
 		F8F63EFC19D2D1BC00B47B87 /* IMPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFC819D1574F00407542 /* IMPlistReader.m */; };
-		F8F63EFD19D2D1D900B47B87 /* NSObjectAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FEFCE19D1694A00407542 /* NSObjectAddition.m */; };
 		F8F63EFE19D2D1D900B47B87 /* IMTableViewUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA1219D00DD200DC8BFD /* IMTableViewUtility.m */; };
 		F8F63EFF19D2D1D900B47B87 /* IMSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2EA0E19D00C5B00DC8BFD /* IMSettingTableViewController.m */; };
 		F8F63F0019D2D1D900B47B87 /* IMSettingSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D293219D2965B0048939C /* IMSettingSaver.m */; };
@@ -59,14 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F842852619D41804006F5807 /* IMControlActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMControlActionProtocol.h; sourceTree = "<group>"; };
 		F86FEFC119D113E100407542 /* Setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Setting.plist; sourceTree = "<group>"; };
 		F86FEFC419D11AC800407542 /* NewUserGroup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NewUserGroup.plist; sourceTree = "<group>"; };
 		F86FEFC719D1574F00407542 /* IMPlistReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPlistReader.h; sourceTree = "<group>"; };
 		F86FEFC819D1574F00407542 /* IMPlistReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPlistReader.m; sourceTree = "<group>"; };
 		F86FEFCB19D1684700407542 /* keypath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keypath.h; sourceTree = "<group>"; };
 		F86FEFCC19D1684700407542 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
-		F86FEFCD19D1694A00407542 /* NSObjectAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectAddition.h; sourceTree = "<group>"; };
-		F86FEFCE19D1694A00407542 /* NSObjectAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectAddition.m; sourceTree = "<group>"; };
 		F89D292C19D261260048939C /* IMPasswordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPasswordTableViewCell.h; sourceTree = "<group>"; };
 		F89D292D19D261260048939C /* IMPasswordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPasswordTableViewCell.m; sourceTree = "<group>"; };
 		F89D293119D2965B0048939C /* IMSettingSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSettingSaver.h; sourceTree = "<group>"; };
@@ -184,12 +181,11 @@
 			children = (
 				F86FEFCB19D1684700407542 /* keypath.h */,
 				F86FEFCC19D1684700407542 /* metamacros.h */,
-				F86FEFCD19D1694A00407542 /* NSObjectAddition.h */,
-				F86FEFCE19D1694A00407542 /* NSObjectAddition.m */,
 				F8F2E9FD19CFFC5A00DC8BFD /* IMTableViewConst.h */,
 				F8F2E9FE19CFFC5A00DC8BFD /* IMTableViewConst.m */,
 				F8F2EA1119D00DD200DC8BFD /* IMTableViewUtility.h */,
 				F8F2EA1219D00DD200DC8BFD /* IMTableViewUtility.m */,
+				F842852619D41804006F5807 /* IMControlActionProtocol.h */,
 				F89D293519D299250048939C /* IMSettingProtocol.h */,
 			);
 			path = Common;
@@ -385,7 +381,6 @@
 				F8F2EA0B19D0026F00DC8BFD /* IMSettingDataSource.m in Sources */,
 				F89D293319D2965B0048939C /* IMSettingSaver.m in Sources */,
 				F8F2EA0319CFFCF400DC8BFD /* IMSettingDataSourceSection.m in Sources */,
-				F86FEFCF19D1694A00407542 /* NSObjectAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +388,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8F63EFD19D2D1D900B47B87 /* NSObjectAddition.m in Sources */,
 				F8F63EFE19D2D1D900B47B87 /* IMTableViewUtility.m in Sources */,
 				F8F63EFF19D2D1D900B47B87 /* IMSettingTableViewController.m in Sources */,
 				F8F63F0019D2D1D900B47B87 /* IMSettingSaver.m in Sources */,

@@ -14,6 +14,21 @@
 @interface IMSettingTableViewController : UITableViewController;
 @property(strong, nonatomic) id<IMSettingDataSource> dataSrc;
 + (instancetype)tableViewControllerWithDataSource:(id<IMSettingDataSource>)dataSrc;
+
+/* overwrite the following methods to handle event */
+
+/* called when any value did change
+   @param
+     dict: hold all values and keys for current settings of table view.
+     currentChangedKey: key for current changed setting
+ */
+- (void)valueDidChange:(NSDictionary*)dict key:(NSString*)currentChangedKey;
+
+/* called when button is pressed 
+    @param
+    currentChangedKey: key for current changed setting
+ */
+- (void)buttonDidTouchUpInsideWithKey:(NSString*)key;
 @end
 
 

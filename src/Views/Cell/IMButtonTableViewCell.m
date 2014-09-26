@@ -23,9 +23,19 @@
         UIButton* btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [btn setTitle:[item textTitle] forState:UIControlStateNormal];
         [self.contentView addSubview:btn];
+        [btn addTarget:self action:@selector(buttonDidTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+        
         self.button = btn;
     }
     return self;
+}
+
+
+- (void)buttonDidTouchUpInside:(UIButton*)sender
+{
+    if (self.actionHandler) {
+        self.actionHandler(self, nil, UIControlEventTouchUpInside);
+    }
 }
 
 - (void)awakeFromNib {

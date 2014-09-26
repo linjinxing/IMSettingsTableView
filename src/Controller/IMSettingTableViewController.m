@@ -21,7 +21,7 @@
 
 #define ToNSValue(val) [NSValue valueWithPointer:&val]
 
-@interface IMSettingTableViewController()
+@interface IMSettingTableViewController()<UITextFieldDelegate>
 @property(strong, nonatomic) id<IMSettingSaver> saver;
 @end
 
@@ -32,11 +32,15 @@
 {
     IMSettingTableViewController* tableViewCtrl = [[[self class] alloc] initWithStyle:dataSrc.tableViewStyle];
     tableViewCtrl.dataSrc = dataSrc;
+    [tableViewCtrl initSaver];
     return tableViewCtrl;
 }
 
 - (void)initSaver
 {
+    if (self.saver) {
+        return;
+    }
     NSMutableArray* keys = [NSMutableArray arrayWithCapacity:30];
     for (int i = 0; i < [self.dataSrc numOfSections]; ++i) {
         for (int j = 0; j < [self.dataSrc numberOfRowsInSection:i]; ++j) {
@@ -51,6 +55,31 @@
     self.saver = [IMSettingSaver settingSaverWithKeys:keys];
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self initSaver];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self.saver save];
+}
+
+#pragma mark - subclass implemnt it to handler event
+- (void)valueDidChange:(NSDictionary*)dict key:(NSString*)currentChangedKey
+{
+    NSLog(@"dict:%@, currentChangedKey:%@", dict, currentChangedKey);
+}
+
+- (void)buttonDidTouchUpInsideWithKey:(NSString*)key
+{
+    NSLog(@"key:%@", key);
+}
+
+#pragma mark -
+
 - (Class)registerCellClassWithStyle:(IMTableViewCellStyle)style
 {
     static dispatch_once_t onceTokenSystem, onceTokenTextfield, onceTokenSwitch, onceTokenButton,onceTokenPassword;
@@ -59,7 +88,7 @@
     NSString* keyClass = @"class";
 
     NSDictionary* dictValueForSystemStyle = @{ keyToken: ToNSValue(onceTokenSystem),
-                                               keyClass: [UITableViewCell class]};
+                                               keyClass: [IMTableViewCell class]};
     
     NSDictionary* dict = @{
                            @(IMTableViewCellStyleDefault)  :  dictValueForSystemStyle,
@@ -93,43 +122,49 @@
     return cls;
 }
 
+- (void)setupEventHandler:(id)cell
+{
+    __weak IMSettingTableViewController* weakSelf = self;
+    [cell setActionHandler:^(id sender, id value, UIControlEvents events){
+        NSLog(@"sender:%@, value:%@", sender, value);
+        if (value) {
+            [weakSelf.saver setObject:value forKey:[sender key]];
+        }
+        if ([sender isKindOfClass:[IMButtonTableViewCell class]]) {
+            [self buttonDidTouchUpInsideWithKey:[sender key]];
+        }else{
+            [self valueDidChange:[weakSelf.saver valuesAndKeys] key:[sender key]];
+        }
+    }];
+}
+
 - (void)setupCell:(id)cell indexPath:(NSIndexPath*)indexPath
 {
+    NSAssert([cell isKindOfClass:[IMTableViewCell class]], @"should be an IMTableViewCell class");
+
+    [self setupEventHandler:cell];
+    
     id<IMSettingDataSourceSectonItem> dataSrcItem = [self.dataSrc itemAtIndexPath:indexPath];
-    if ([cell isKindOfClass:[IMTextfieldTableViewCell class]])
+    id value = [self.saver objectForKey:[dataSrcItem key]];
+    if ([cell isKindOfClass:[IMTextfieldTableViewCell class]]
+        || [cell isKindOfClass:[IMPasswordTableViewCell class]])
     {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textOfTextFieldDidChange:) name:UITextFieldTextDidChangeNotification object:[cell textField]
-         ];
+        [[cell textField] setDelegate:self];
+        [[cell textField] setText:value];
     }else if ([cell isKindOfClass:[IMSwitchTableViewCell class]])
     {
-        UISwitch* s = [cell uiswitch];
-        [s setOn:[self.saver boolForKey:[dataSrcItem key]]];
-        [s addTarget:self action:@selector(switchValueDidChange:) forControlEvents:UIControlEventValueChanged];
-    }else if ([cell isKindOfClass:[IMButtonTableViewCell class]])
-    {
-        [[cell button] addTarget:self action:@selector(buttonDidTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-    }else if ([cell isKindOfClass:[IMPasswordTableViewCell class]])
-    {
-        
-    }else{
-        NSLog(@"cell:%@", cell);
+        [[cell swi] setOn:[value boolValue]];
     }
 }
+
 #pragma mark -
-- (void)textOfTextFieldDidChange:(NSNotification*)noti
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    
+    [textField resignFirstResponder];
+    return YES;
 }
 
-- (void)switchValueDidChange:(UISwitch*)sender
-{
-    
-}
-
-- (void)buttonDidTouchUpInside:(UIButton*)sender
-{
-    
-}
 
 #pragma mark - UITableView data source
 
@@ -148,15 +183,7 @@
     Class cls = [self registerCellClassWithStyle:style];
     cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (nil == cell) {
-        if ([UITableViewCell class] == cls) {
-            cell = [[cls alloc] initWithStyle:(UITableViewCellStyle)style reuseIdentifier:identifier];
-            if ([dataSrcItem.accessoryType length]) {
-                cell.accessoryType = IMTableViewUtilityCellAccessoryTypeFromString(dataSrcItem.accessoryType);
-            }
-            cell.textLabel.text = dataSrcItem.textTitle;
-        }else{
-            cell = [[cls alloc] initWithStyle:style reuseIdentifier:identifier item:dataSrcItem];
-        }
+        cell = [[cls alloc] initWithStyle:style reuseIdentifier:identifier item:dataSrcItem];
         [self setupCell:cell indexPath:indexPath];
     }
     return cell;

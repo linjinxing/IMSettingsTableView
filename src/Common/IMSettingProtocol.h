@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "IMControlActionProtocol.h"
 
 typedef NS_ENUM(NSUInteger, IMTableViewCellStyle){
     IMTableViewCellStyleDefault = UITableViewCellStyleDefault,
@@ -48,11 +49,13 @@ typedef NS_ENUM(NSUInteger, IMTableViewCellStyle){
 @end
 
 
-@protocol IMTableViewCell <NSObject>
+@protocol IMTableViewCell <IMControlActionHandler, NSObject>
+@property(nonatomic, copy) NSString* key;
 - (instancetype)initWithStyle:(IMTableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier item:(id<IMSettingDataSourceSectonItem>)item;
 @end
 
 @protocol IMSettingSaver
+- (NSDictionary*)valuesAndKeys;
 + (instancetype)settingSaverWithKeys:(NSArray*)keys;
 - (void)save;
 
